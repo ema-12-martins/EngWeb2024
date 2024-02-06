@@ -1,0 +1,2 @@
+# TPC1
+Este trabalho tem como objetivo criar uma página com um indice das ruas existentes na plataforma. Após selecionar uma rua, deve ser possivel visualizar a informao disponivel dessa rua. Devemos ter 2 a 3 páginas de rua. Cada página deve ainda ter um rodapé e um botao de retorno. Deve ter um script python que retire a informacao de XML para a depositar na pagina.
