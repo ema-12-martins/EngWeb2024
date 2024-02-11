@@ -91,7 +91,37 @@ while i < len(xml_names):
         html_street += f"<br><br>"
     html_street += f"</pre>"
 
-        
+    # Encontrar todas as figuras
+    figuras = root.findall('.//figura')
+    if figuras:
+        html_street += f"<h3>Imagens:</h3>"
+        html_street += f"<div style='margin-left: 20px;'>"
+        for figura in figuras:
+            # Iterar sobre as figuras
+            figura_id = figura.get('id')
+            imagem_path = figura.find('imagem').get('path')
+            legenda = figura.find('legenda').text
+
+            html_street += f"<p>{legenda}</p>"
+            html_street += f"<img src='{imagem_path}' alt='Imagem indisponível' style='max-width: 100%; height: auto;'>"
+        html_street += f"<br><br>"
+        html_street += f"</div>"
+    html_street += f"<br><br><br>"
+
+    #Fotos atuais
+    html_street += f"<h3>Fotos atuais da rua:</h3>"
+
+    # Listar todos os arquivos no diretoria
+    list_img=[]
+    for nome_arquivo in os.listdir("atual"):
+        if re.match(f"{str(i+1).zfill(2)}-.*", nome_arquivo):
+            caminho_imagem = os.path.join("atual", nome_arquivo)
+            list_img.append(caminho_imagem)
+    #Se existirem imagens atuais, entao estas vao ser exibidas
+    if list_img:
+        for img in list_img:
+            print(img)
+            html_street += f"<img src='../{img}' alt='Imagem indisponível' style='max-width: 100%; height: auto;'>"   
 
 
     #Para terminar a pagina principal
