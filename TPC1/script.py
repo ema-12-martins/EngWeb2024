@@ -1,5 +1,11 @@
 import os
 import xml.etree.ElementTree as ET
+import re
+
+# Função para remover tags XML de uma string
+def remove_tags(text):
+    clean = re.compile('<.*?>')
+    return re.sub(clean, '', text)
 
 
 #Cabecalho inicial do HTML
@@ -13,67 +19,117 @@ html='''
 <body>
 
 '''
-#...................................................Pagina principal.............................................
 
-htlm_principal_pag=html
+#Onde fica os nome das ruas
+list_street=[]
 
-#Para selecioanr todos as ruas
-list_street = [x for x in os.listdir("texto")]
-list_street_without_mod=list_street.copy()
-
-# Colocar os nomes das ruas direitos
-i=0
-lenght_list_street=len(list_street)
-while i < lenght_list_street:
-    list_street[i] = list_street[i][7:-4]
-
-    j = 0
-    lenght_elem_list_street = len(list_street[i]) 
-    while j < lenght_elem_list_street:
-        if list_street[i][j].isupper() and j > 0:
-            list_street[i] = list_street[i][:j] + " " + list_street[i][j:]
-            j+=1
-        j += 1
-    i+=1  
-
-#Ordenar alfabeticamente as ruas
-list_street.sort()
-
-
-#Fazer uma lista com todos os nomes das ruas em html
-htlm_principal_pag+="<ul>"
-htlm_principal_pag+="<h1>Selecione uma das ruas para obter mais informações!</h1>"
-for street in list_street:
-    htlm_principal_pag+=f"<li>{street}</li>"
-
-#Para terminar a pagina principal
-htlm_principal_pag+="</ul>"
-htlm_principal_pag+="</body>"
-htlm_principal_pag+="</html>"
-
-#Para criar a pagina propriamente dita
-file = open("pagina_principal.html","w",encoding="utf-8")
-file.write(htlm_principal_pag)
-file.close()
-
-#................................................Paginas das ruas.........................................
+#Para termos todos os nomes presentes nessa pagina
+xml_names = [x for x in os.listdir("texto")]
+xml_names.sort()
 
 #Criar pasta para os as paginas das ruas
 if not os.path.exists("paginas_ruas"):
     os.mkdir("paginas_ruas")
 
-# Carregar o arquivo XML
+#Trabalhar sobre cada XML
 i=0
-while i<lenght_list_street:
-    tree = ET.parse(f"texto/{list_street_without_mod[i]}")
+while i < len(xml_names):
+
+    # Carregar o arquivo XML
+    tree = ET.parse(f"texto/{xml_names[i]}")
     root = tree.getroot()
 
-    nome_pagina=f"html{i+1}"
-    html_pagina_rua=html
-    
+    # Encontrar o elemento 'nome' dentro de 'meta'
+    street_name = root.find('./meta/nome').text
+    list_street.append(street_name)
+
+    #........................................Criar a pagina desta rua.........................................
+    html_street=html
+    html_street+="<ul>"
+
+    #Nome
+    html_street+=f"<h1>{street_name}</h1>"
+
+    # Encontrar todos os elementos 'para'
+    html_street+="<h3>Descrição:</h3>"
+    for para in root.findall('.//para'):
+        # Obter o texto dentro do elemento 'para'
+        texto_para = ET.tostring(para, encoding='unicode', method='text')
+        
+        # Remover as tags XML do texto e adicionar ao texto final
+        texto_final = remove_tags(texto_para.strip()) + "\n"
+
+        # Adicionar o texto ao HTML
+        html_street += f"<p>{texto_final}</p>"
+    html_street += f"<br><br>"
+
+    #Para as casas
+    html_street += f"<h3>Casas:</h3>"
+    html_street += f"<pre style='margin-left: 20px;'>"
+
+    for casa in root.findall('.//casa'):
+        numero_element = casa.find('número')
+        if numero_element is not None:
+            numero = numero_element.text
+            html_street += f"<p><b>Número:</b> {numero}</p>"
+
+        enfiteuta_element = casa.find('enfiteuta')
+        if enfiteuta_element is not None:
+            enfiteuta = enfiteuta_element.text
+            html_street += f"<p><b>Enfiteuta:</b> {enfiteuta}</p>"
+        
+        foro_element = casa.find('foro')
+        if foro_element is not None:
+            foro = foro_element.text
+            html_street += f"<p><b>Foro:</b> {foro}</p>"
+        
+        descricao_element = casa.find('desc')
+        if descricao_element is not None:
+            descricao_limpa = remove_tags(ET.tostring(descricao_element, encoding='unicode'))
+            html_street += f"<p><b>Descrição:</b> {descricao_limpa}</p>"
+
+        html_street += f"<br><br>"
+    html_street += f"</pre>"
+
+        
 
 
+    #Para terminar a pagina principal
+    html_street+="</ul>"
+    html_street+="</body>"
+    html_street+="</html>"
+
+    #Para criar a pagina propriamente dita
+    file = open(f"paginas_ruas/{i+1}.html","w",encoding="utf-8")
+    file.write(html_street)
+    file.close()
 
     i+=1
+
+
+#Ordenar alfabeticamente as ruas e para associar aos nomes das paginas
+list_street=list(enumerate(list_street,start=1))
+list_street = sorted(list_street, key=lambda x: x[1])
+
+#...........................Criar a pagina principal................................................
+html_principal_pag=html
+
+html_principal_pag+="<ul>"
+html_principal_pag+="<h1>Selecione uma das ruas para obter mais informações!</h1>"
+
+i=0
+while i < len(list_street):
+    html_principal_pag+=f"<li><a href='paginas_ruas/{list_street[i][0]}.html'>{list_street[i][1]}</a></li>"
+    i+=1
+
+#Para terminar a pagina principal
+html_principal_pag+="</ul>"
+html_principal_pag+="</body>"
+html_principal_pag+="</html>"
+
+#Para criar a pagina propriamente dita
+file = open("pagina_principal.html","w",encoding="utf-8")
+file.write(html_principal_pag)
+file.close()
 
 
