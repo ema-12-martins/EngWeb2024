@@ -13,12 +13,10 @@
         </uc>
     </meta>
     <resumo>
-        <p>Primeiro Paragrafos</p>
-        <p>Segundo Paragrafos</p>
+        <p>Este trabalho tem como objetivo gerar um script que permita criar uma página HTML com uma lista das cidades de Braga, ordenadas alfabeticamente. Quando um utilizador clicar numa das cidades, deve ser aberta uma nova página que contém as informações dessa rua (descrição, fotos, casas...).</p>
         <p>Terceiro Paragrafos com <url>link</url><texto>url embutido</texto></p>
     </resumo>
     <resultados>
-        <resultado> resultado 1 </resultado>
-        <resultado> resultado 2 </resultado>
+        <resultado> Através do script.py é gerada a página principal pedida bem como todas as páginas secundárias.</resultado>
     </resultados> 
 </doc>
