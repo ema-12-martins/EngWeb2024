@@ -1,5 +1,5 @@
 import os
-import xml
+import xml.etree.ElementTree as ET
 
 
 #Cabecalho inicial do HTML
@@ -19,6 +19,7 @@ htlm_principal_pag=html
 
 #Para selecioanr todos as ruas
 list_street = [x for x in os.listdir("texto")]
+list_street_without_mod=list_street.copy()
 
 # Colocar os nomes das ruas direitos
 i=0
@@ -57,5 +58,22 @@ file.close()
 
 #................................................Paginas das ruas.........................................
 
+#Criar pasta para os as paginas das ruas
+if not os.path.exists("paginas_ruas"):
+    os.mkdir("paginas_ruas")
+
+# Carregar o arquivo XML
+i=0
+while i<lenght_list_street:
+    tree = ET.parse(f"texto/{list_street_without_mod[i]}")
+    root = tree.getroot()
+
+    nome_pagina=f"html{i+1}"
+    html_pagina_rua=html
+    
+
+
+
+    i+=1
 
 
