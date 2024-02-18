@@ -125,19 +125,17 @@ while i < len(xml_names):
 
     # Encontrar todas as figuras
     figuras = root.findall('.//figura')
+
     if figuras:
         html_street += f"<h3>Imagens:</h3>"
-        html_street += f"<div style='margin-left: 20px;'>"
+        
         for figura in figuras:
             # Iterar sobre as figuras
             figura_id = figura.get('id')
             imagem_path = figura.find('imagem').get('path')
             legenda = figura.find('legenda').text
+            html_street += f"<img src='{imagem_path}' alt='Imagem indisponível' style='max-width: 45%; height: auto;margin-right: 5%;'>"
 
-            html_street += f"<p>{legenda}</p>"
-            html_street += f"<img src='{imagem_path}' alt='Imagem indisponível' style='max-width: 100%; height: auto;'>"
-        html_street += f"<br><br>"
-        html_street += f"</div>"
     html_street += f"<br><br><br>"
 
 
@@ -152,8 +150,7 @@ while i < len(xml_names):
         #Fotos atuais
         html_street += f"<h3>Fotos atuais da rua:</h3>"
         for img in list_img:
-            print(img)
-            html_street += f"<img src='../{img}' alt='Imagem indisponível' style='max-width: 100%; height: auto;'>"   
+            html_street += f"<img src='../{img}' alt='Imagem indisponível' style='max-width: 45%; height: auto;margin-right: 5%;'>"   
 
 
     #Para terminar a pagina principal
