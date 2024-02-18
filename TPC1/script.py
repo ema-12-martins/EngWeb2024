@@ -86,8 +86,10 @@ while i < len(xml_names):
             
             descricao_element = casa.find('desc')
             if descricao_element is not None:
-                descricao_limpa = remove_tags(ET.tostring(descricao_element, encoding='unicode'))
-                html_street += f"<p><b>Descrição:</b> {descricao_limpa}</p>"
+                html_street += f"<p><b>Descrição:</b></p>"
+                for para in descricao_element.findall('para'):
+                    descricao_limpa = remove_tags(ET.tostring(para, encoding='unicode', method='text').strip())
+                    html_street += f"<p>{descricao_limpa}</p>"
 
             html_street += f"<br><br>"
         html_street += f"</pre>"
