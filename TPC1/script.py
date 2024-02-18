@@ -15,6 +15,11 @@ html='''
 <head>
     <title>EngWeb2024</title>
     <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
 
@@ -63,35 +68,59 @@ while i < len(xml_names):
         html_street += f"<p>{texto_final}</p>"
     html_street += f"<br><br>"
 
-    if len(root.findall('.//casa'))>0:
-        #Para as casas
-        html_street += f"<h3>Casas:</h3>"
-        html_street += f"<pre style='margin-left: 20px;'>"
+    if len(root.findall('.//casa')) > 0:
+        # Para as casas
+        html_street += "<h3>Casas:</h3>"
+        html_street += "<table style='max-width: 100%; margin-left: 20px; border-collapse: collapse;'>"
         
+        # Cabeçalho da tabela
+        html_street += "<tr>"
+        html_street += "<th style='border: 1px solid black; padding: 8px;'>Número</th>"
+        html_street += "<th style='border: 1px solid black; padding: 8px;'>Enfiteuta</th>"
+        html_street += "<th style='border: 1px solid black; padding: 8px;'>Foro</th>"
+        html_street += "<th style='border: 1px solid black; padding: 8px;'>Descrição</th>"
+        html_street += "</tr>"
+
         for casa in root.findall('.//casa'):
+            html_street += "<tr>"
+            
             numero_element = casa.find('número')
             if numero_element is not None:
                 numero = numero_element.text
-                html_street += f"<p><b>Número:</b> {numero}</p>"
+                html_street += f"<td style='border: 1px solid black; padding: 8px;'>{numero}</td>"
+            else:
+                html_street += "<td style='border: 1px solid black; padding: 8px;'></td>"
 
             enfiteuta_element = casa.find('enfiteuta')
             if enfiteuta_element is not None:
                 enfiteuta = enfiteuta_element.text
-                html_street += f"<p><b>Enfiteuta:</b> {enfiteuta}</p>"
+                html_street += f"<td style='border: 1px solid black; padding: 8px;'>{enfiteuta}</td>"
+            else:
+                html_street += "<td style='border: 1px solid black; padding: 8px;'></td>"
             
             foro_element = casa.find('foro')
             if foro_element is not None:
                 foro = foro_element.text
-                html_street += f"<p><b>Foro:</b> {foro}</p>"
+                html_street += f"<td style='border: 1px solid black; padding: 8px;'>{foro}</td>"
+            else:
+                html_street += "<td style='border: 1px solid black; padding: 8px;'></td>"
             
             descricao_element = casa.find('desc')
             if descricao_element is not None:
-                html_street += f"<p><b>Descrição:</b></p>"
+                html_street += "<td style='border: 1px solid black; padding: 8px;'>"
                 for para in descricao_element.findall('para'):
                     descricao_limpa = remove_tags(ET.tostring(para, encoding='unicode', method='text').strip())
                     html_street += f"<p>{descricao_limpa}</p>"
+                html_street += "</td>"
+            else:
+                html_street += "<td style='border: 1px solid black; padding: 8px;'></td>"
 
-            html_street += f"<br><br>"
+            html_street += "</tr>"
+
+        html_street += "</table>"
+
+
+        html_street += f"<br><br>"
         html_street += f"</pre>"
 
     # Encontrar todas as figuras
