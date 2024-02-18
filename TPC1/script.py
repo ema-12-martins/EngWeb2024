@@ -57,39 +57,40 @@ while i < len(xml_names):
         texto_para = ET.tostring(para, encoding='unicode', method='text')
         
         # Remover as tags XML do texto e adicionar ao texto final
-        texto_final = remove_tags(texto_para.strip()) + "\n"
+        texto_final = remove_tags(texto_para.strip())
 
         # Adicionar o texto ao HTML
         html_street += f"<p>{texto_final}</p>"
     html_street += f"<br><br>"
 
-    #Para as casas
-    html_street += f"<h3>Casas:</h3>"
-    html_street += f"<pre style='margin-left: 20px;'>"
-
-    for casa in root.findall('.//casa'):
-        numero_element = casa.find('número')
-        if numero_element is not None:
-            numero = numero_element.text
-            html_street += f"<p><b>Número:</b> {numero}</p>"
-
-        enfiteuta_element = casa.find('enfiteuta')
-        if enfiteuta_element is not None:
-            enfiteuta = enfiteuta_element.text
-            html_street += f"<p><b>Enfiteuta:</b> {enfiteuta}</p>"
+    if len(root.findall('.//casa'))>0:
+        #Para as casas
+        html_street += f"<h3>Casas:</h3>"
+        html_street += f"<pre style='margin-left: 20px;'>"
         
-        foro_element = casa.find('foro')
-        if foro_element is not None:
-            foro = foro_element.text
-            html_street += f"<p><b>Foro:</b> {foro}</p>"
-        
-        descricao_element = casa.find('desc')
-        if descricao_element is not None:
-            descricao_limpa = remove_tags(ET.tostring(descricao_element, encoding='unicode'))
-            html_street += f"<p><b>Descrição:</b> {descricao_limpa}</p>"
+        for casa in root.findall('.//casa'):
+            numero_element = casa.find('número')
+            if numero_element is not None:
+                numero = numero_element.text
+                html_street += f"<p><b>Número:</b> {numero}</p>"
 
-        html_street += f"<br><br>"
-    html_street += f"</pre>"
+            enfiteuta_element = casa.find('enfiteuta')
+            if enfiteuta_element is not None:
+                enfiteuta = enfiteuta_element.text
+                html_street += f"<p><b>Enfiteuta:</b> {enfiteuta}</p>"
+            
+            foro_element = casa.find('foro')
+            if foro_element is not None:
+                foro = foro_element.text
+                html_street += f"<p><b>Foro:</b> {foro}</p>"
+            
+            descricao_element = casa.find('desc')
+            if descricao_element is not None:
+                descricao_limpa = remove_tags(ET.tostring(descricao_element, encoding='unicode'))
+                html_street += f"<p><b>Descrição:</b> {descricao_limpa}</p>"
+
+            html_street += f"<br><br>"
+        html_street += f"</pre>"
 
     # Encontrar todas as figuras
     figuras = root.findall('.//figura')
@@ -108,8 +109,6 @@ while i < len(xml_names):
         html_street += f"</div>"
     html_street += f"<br><br><br>"
 
-    #Fotos atuais
-    html_street += f"<h3>Fotos atuais da rua:</h3>"
 
     # Listar todos os arquivos no diretoria
     list_img=[]
@@ -119,6 +118,8 @@ while i < len(xml_names):
             list_img.append(caminho_imagem)
     #Se existirem imagens atuais, entao estas vao ser exibidas
     if list_img:
+        #Fotos atuais
+        html_street += f"<h3>Fotos atuais da rua:</h3>"
         for img in list_img:
             print(img)
             html_street += f"<img src='../{img}' alt='Imagem indisponível' style='max-width: 100%; height: auto;'>"   
@@ -149,7 +150,7 @@ html_principal_pag+="<h1>Selecione uma das ruas para obter mais informações!</
 
 i=0
 while i < len(list_street):
-    html_principal_pag+=f"<li><a href='paginas_ruas/{list_street[i][0]}.html'>{list_street[i][1]}</a></li>"
+    html_principal_pag+=f"<li><a href='paginas_ruas/{list_street[i][0]}.html' >{list_street[i][1]}</a></li>"
     i+=1
 
 #Para terminar a pagina principal
