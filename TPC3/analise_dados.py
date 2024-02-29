@@ -4,6 +4,8 @@ def create_new_db(file_path):
     # The db will be a dict of lists
     new_db = {
         "films": [],
+        "cast":[],
+        "genres":[],
     }
 
     # Open the json to analyze your information
@@ -23,8 +25,18 @@ def create_new_db(file_path):
                     "cast": film_in_db.get('cast', []),
                     "genres": film_in_db.get('genres', []),
                 }
+                new_gender={
+                    "id": film_in_db.get('_id', {}).get('$oid', ''),
+                    "genres": film_in_db.get('genres', []),
+                }
+                new_cast={
+                    "id": film_in_db.get('_id', {}).get('$oid', ''),
+                    "cast": film_in_db.get('cast', []),
+                }
                 
                 new_db['films'].append(new_film)
+                new_db['genres'].append(new_gender)
+                new_db['cast'].append(new_cast)
             line = file.readline()
     
     with open("new_db.json", 'w+') as new_file:
