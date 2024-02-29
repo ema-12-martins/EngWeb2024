@@ -28,8 +28,7 @@ http.createServer((req, res) => {
                 res.write("<p>Click on the film you want to know more about.</p>")
                 res.write('<ul class="custom-list">')
                 data.forEach(element => {
-                    let title = element.title
-                    res.write('<li>'+title+'</li>')
+                    res.write('<li><a href="films/' + element.id + '">' + element.title + '</a></li>');
                 });
                 res.write('</ul>')
 

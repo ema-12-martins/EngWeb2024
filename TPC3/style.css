@@ -14,3 +14,9 @@ body {
     margin-bottom: 5px;
     border-radius: 5px;
 }
+
+.custom-list li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent (if not desired, set a specific color here) */
+}
+
