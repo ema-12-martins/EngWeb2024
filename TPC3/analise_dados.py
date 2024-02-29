@@ -13,6 +13,7 @@ def create_new_db(file_path):
         line = file.readline()
         while line:
             line = line.strip()
+            print(line)
             if line:
                 # Create the object with the right struct
                 film_in_db = json.loads(line)
