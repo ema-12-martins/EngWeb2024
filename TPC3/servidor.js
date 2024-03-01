@@ -72,8 +72,21 @@ http.createServer((req, res) => {
                     res.write("<h1>"+element.title+"</h1>")
                     res.write("<p><b>Id: </b>"+element.id+"</p>")
                     res.write("<p><b>Year: </b>"+element.year+"</p>")
-                    res.write("<p><b>Cast: </b>"+element.cast+"</p>")
-                    res.write("<p><b>Genres: </b>"+element.genres+"</p>")
+
+                    res.write("<p><b>Cast: </b></p>")
+                    res.write('<ul>')
+                    element.cast.forEach(element => {
+                        res.write('<li>' + element + '</li>');
+                    });
+                    res.write('</ul>')
+
+                    res.write("<p><b>Genres: </b></p>")
+                    res.write('<ul>')
+                    element.genres.forEach(element => {
+                        res.write('<li>' + element + '</li>');
+                    });
+                    res.write('</ul>')
+
                     res.write('<button onclick="window.location.href=\'/films\'">Back</button>');
                 })
 
