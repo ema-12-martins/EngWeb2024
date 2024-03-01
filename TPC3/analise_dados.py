@@ -9,13 +9,11 @@ def create_new_db(file_path):
         "cast":[],
         "genres":[],
     }
-    i=0
     # Open the json to analyze your information
     with open(file_path, 'r') as file:
         line = file.readline()
         while line:
             line = line.strip()
-            i+=1
             if line:
                 # Create the object with the right struct
                 film_in_db = json.loads(line)
