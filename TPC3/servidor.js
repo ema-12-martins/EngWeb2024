@@ -92,7 +92,8 @@ http.createServer((req, res) => {
                 Promise.all(axiosPromises_cast)
                     .then(responses => {
                         res.write("<p><b>Cast: </b></p>")
-                        res.write("<ul>")
+                        res.write('<ul class="without_underlines li a">');
+
                         responses.forEach(resp2 => {
                             let data2=resp2.data
                             data2.forEach(element2 => {
@@ -106,7 +107,7 @@ http.createServer((req, res) => {
                     })
                     .then(responses => {
                         res.write("<p><b>Genres: </b></p>")
-                        res.write("<ul>")
+                        res.write('<ul class="without_underlines li a">');
                         responses.forEach(resp2 => {
                             let data2=resp2.data
                             data2.forEach(element2 => {
