@@ -97,6 +97,126 @@ http.createServer((req, res) => {
                 res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
                 res.end("<h1>Internal Server Error</h1>")
             });
+    
+        
+    }else if(req.url == '/genres'){
+        axios.get("http://localhost:3000/genres?_sort=genre") // No need for query parameters here
+            .then(resp => {
+                res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+                let header = `<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta charset="utf-8"/>
+                            <title>Genres list</title>
+                            <link rel="stylesheet" href="/style.css"/>
+                        </head>
+                        <body>`
+                let data=resp.data
+
+                res.write(header);
+                res.write("<h1>Genres List</h1>")
+                res.write("<p>Click on the genre you want to know more about.</p>")
+                res.write('<ul class="custom-list">')
+                data.forEach(element => {
+                    res.write('<li><a href="genres/' + element.id + '">' + element.genre + '</a></li>');
+                });
+                res.write('</ul>')
+
+                res.end();
+            })
+            .catch(error => {
+                console.error(error)
+                res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
+                res.end("<h1>Internal Server Error</h1>")
+            });
+    
+    }else if(req.url.match(/\/genres\/.*/)){
+        let id=req.url.substring(8);
+        axios.get("http://localhost:3000/genres?id="+id+"")
+            .then(resp => {
+                res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+                let data=resp.data
+                let header = `<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta charset="utf-8"/>
+                            <title>Genre Page</title>
+                            <link rel="stylesheet" href="/style.css"/>
+                        </head>
+                        <body>`
+
+                data.forEach(element => {
+                    res.write("<h1>"+element.genre+"</h1>")
+                    res.write('<button onclick="window.location.href=\'/genres\'">Back</button>');
+                })
+
+                res.end();
+            })
+            .catch(error => {
+                console.error(error)
+                res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
+                res.end("<h1>Internal Server Error</h1>")
+            });
+    
+    }else if(req.url == '/cast'){
+        axios.get("http://localhost:3000/cast?_sort=actor") // No need for query parameters here
+            .then(resp => {
+                res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+                let header = `<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta charset="utf-8"/>
+                            <title>Actors list</title>
+                            <link rel="stylesheet" href="/style.css"/>
+                        </head>
+                        <body>`
+                let data=resp.data
+
+                res.write(header);
+                res.write("<h1>Cast</h1>")
+                res.write("<p>Click on the actor you want to know more about.</p>")
+                res.write('<ul class="custom-list">')
+                data.forEach(element => {
+                    res.write('<li><a href="cast/' + element.id + '">' + element.actor + '</a></li>');
+                });
+                res.write('</ul>')
+
+                res.end();
+            })
+            .catch(error => {
+                console.error(error)
+                res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
+                res.end("<h1>Internal Server Error</h1>")
+            });
+    
+    }else if(req.url.match(/\/cast\/.*/)){
+        let id=req.url.substring(6);
+        axios.get("http://localhost:3000/cast?id="+id+"")
+            .then(resp => {
+                res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+                let data=resp.data
+                let header = `<!DOCTYPE html>
+                    <html>
+                        <head>
+                            <meta charset="utf-8"/>
+                            <title>Actor Page</title>
+                            <link rel="stylesheet" href="/style.css"/>
+                        </head>
+                        <body>`
+
+                data.forEach(element => {
+                    res.write("<h1>"+element.actor+"</h1>")
+                    res.write('<button onclick="window.location.href=\'/cast\'">Back</button>');
+                })
+
+                res.end();
+            })
+            .catch(error => {
+                console.error(error)
+                res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
+                res.end("<h1>Internal Server Error</h1>")
+            });
+        
 
     } else {
         res.writeHead(404, { 'Content-Type': 'text/html;charset=utf-8' })
