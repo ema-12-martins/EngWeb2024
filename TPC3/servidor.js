@@ -51,7 +51,6 @@ http.createServer((req, res) => {
                 res.end()
             }
         })
-    
     }else if(req.url.match(/\/films\/.*/)){
         let id=req.url.substring(7);
         axios.get("http://localhost:3000/films?id="+id+"")
@@ -66,38 +65,69 @@ http.createServer((req, res) => {
                             <link rel="stylesheet" href="/style.css"/>
                         </head>
                         <body>`
-
+    
                 res.write(header);
+    
+                // Arrays para armazenar todas as promessas do Axios
+                let axiosPromises_cast = [];
+                let axiosPromises_genres = [];
+    
                 data.forEach(element => {
                     res.write("<h1>"+element.title+"</h1>")
                     res.write("<p><b>Id: </b>"+element.id+"</p>")
                     res.write("<p><b>Year: </b>"+element.year+"</p>")
-
-                    res.write("<p><b>Cast: </b></p>")
-                    res.write('<ul>')
-                    element.cast.forEach(element => {
-                        res.write('<li>' + element + '</li>');
+    
+                    element.cast.forEach(actor_id => {
+                        // Armazena a promessa do Axios em um array
+                        axiosPromises_cast.push(axios.get(`http://localhost:3000/cast?id=${actor_id}`));
                     });
-                    res.write('</ul>')
-
-                    res.write("<p><b>Genres: </b></p>")
-                    res.write('<ul>')
-                    element.genres.forEach(element => {
-                        res.write('<li>' + element + '</li>');
+    
+                    element.genres.forEach(genre_id => {
+                        // Armazena a promessa do Axios em um array
+                        axiosPromises_genres.push(axios.get(`http://localhost:3000/genres?id=${genre_id}`));
                     });
-                    res.write('</ul>')
-
-                    res.write('<button onclick="window.location.href=\'/films\'">Back</button>');
                 })
-
-                res.end();
+    
+                // Aguarda todas as promessas do Axios para o elenco serem resolvidas
+                Promise.all(axiosPromises_cast)
+                    .then(responses => {
+                        res.write("<p><b>Cast: </b></p>")
+                        res.write("<ul>")
+                        responses.forEach(resp2 => {
+                            let data2=resp2.data
+                            data2.forEach(element2 => {
+                                res.write('<li><a href="/cast/' + element2.id + '">' + element2.actor+ '</a></li>');
+                            });
+                            
+                        });
+                        res.write("</ul>")
+                        // Aguarda todas as promessas do Axios para os gêneros serem resolvidas
+                        return Promise.all(axiosPromises_genres);
+                    })
+                    .then(responses => {
+                        res.write("<p><b>Genres: </b></p>")
+                        res.write("<ul>")
+                        responses.forEach(resp2 => {
+                            let data2=resp2.data
+                            data2.forEach(element2 => {
+                                res.write('<li><a href="/genres/' + element2.id + '">' + element2.genre+ '</a></li>');
+                            });
+                        });
+                        res.write("</ul>")
+                        res.write('<button onclick="window.location.href=\'/films\'">Back</button>');
+                        res.end('</body></html>');
+                    })
+                    .catch(error => {
+                        console.error(error)
+                        res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
+                        res.end("<h1>Internal Server Error</h1>")
+                    });
             })
             .catch(error => {
                 console.error(error)
                 res.writeHead(500, { 'Content-Type': 'text/html;charset=utf-8' })
                 res.end("<h1>Internal Server Error</h1>")
             });
-    
         
     }else if(req.url == '/genres'){
         axios.get("http://localhost:3000/genres?_sort=genre") // No need for query parameters here
