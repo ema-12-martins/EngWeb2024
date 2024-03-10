@@ -32,7 +32,7 @@ def create_new_db(file_path):
                 db['periodos_musicais'].append(new_period)
                 db['compositores'].append(compositor)
             else:
-                compositor['periodo']=db["periodos_musicais"][i]['id']
+                compositor['periodo_id']=db["periodos_musicais"][i]['id']
                 db['compositores'].append(compositor)
 
     

@@ -1,147 +1,11 @@
 {
   "compositores": [
     {
-      "id": "C26",
-      "nome": "Alessandro Marcello",
-      "bio": "Alessandro Ignazio Marcello (Veneza, 1 de Fevereiro de 1673 –Veneza, 19 de Junho de 1747) foi um nobre e diletante, que se interessava pela\n         arte, tendo sido poeta, filósofo e notável músico italiano.",
-      "dataNasc": "1673-02-01",
-      "dataObito": "1747-06-19",
-      "periodo": "Barroco"
-    },
-    {
-      "id": "C192",
-      "nome": "Andrea Falconieri",
-      "bio": "Andrea Falconieri (Nápoles, 1585 or 1586 - ?, 1656), também conhecido como Falconiero, foi um compositor e alaudista italiano.Viveu em\n         Parma de 1604 a 1614, depois em Roma e finalmente voltou a Nápoles, onde, em 1647, tornou-se maestro di cappella da capela real.",
-      "dataNasc": "1585",
-      "dataObito": "1656",
-      "periodo": "p2"
-    },
-    {
-      "id": "C242",
-      "nome": "Anerio, Felice",
-      "bio": "Felice Anerio (Narni, 1560 – Roma, 26 ou 27 de setembro de 1614) foi um compositor italiano do final da Renascença e início do Barroco, e\n         membro da Escola romana de compositores. Foi o irmão mais velho de outro importante, e um pouco mais progressista compositor do mesmo\n         período, Giovanni Francesco Anerio.",
-      "dataNasc": "1560",
-      "dataObito": "1614",
-      "periodo": "p2"
-    },
-    {
-      "id": "C244",
-      "nome": "Anerio, Giovanni Francesco",
-      "bio": "Giovanni Francesco Anerio (ca. 1567 – sepultado em 12 de junho de 1630) foi um compositor italiano da Escola romana, do final da Renascença\n         e início Barroco. Era o irmão mais novo de Felice Anerio. A principal importância de Giovanni na história da música foi a sua contribuição\n         para o desenvolvimento inicial do oratório; ele representou a tendência progressista em meio a outra forma conservadora da Escola romana,\n         embora compartilhasse também de algumas das tendências estilísticas do seu irmão, que foi muito influenciado por Palestrina.",
-      "dataNasc": "1567",
-      "dataObito": "1630",
-      "periodo": "p2"
-    },
-    {
       "id": "C204",
       "nome": "Antoine Forqueray",
       "bio": "Antoine Forqueray (Paris 1671- Mantes-la-Jolie 1745) foi um compositor francês e intérprete virtuoso da viola de gamba.Nasceu em Paris, e\n         foi o mais conhecido de uma série de músicos, entre os quais o seu primo Michel Forqueray (1681-1757), o seu filho Jean-Baptiste Forqueray\n         (1699-1782) e Nicolas-Gilles Forqueray (1703-1761) que era segundo primo de Jean-Baptiste.O seu pai foi violista e mestre de baile.\n         Certamente ter-lhe-á dado as primeiras lições, que assimilou com rapidez, uma vez que foi considerado menino-prodígio. Atuou muito jovem para\n         o rei, que patrocinou generosamente a sua educação na corte. Em 1689, com somente 18 anos, foi nomeado musicien ordinaire de La Chambre du\n         Roy de Luís XIV. Frequentemente interpretava para entreter o rei durante as refeições e os embaixadores estrangeiros. Foi estimado como\n         professor, tendo entre os seus alunos Filipe de Orleães (futuro regente) e seu filho Luís.Em 1697 casou com Henriette-Angélique Houssu, filha\n         de um organista e ela mesma cravista. Frequentemente interpretava acompanhado pela sua mulher ao cravo. No entanto, o casamento teve várias\n         crises, tendo Antoine e Henriette se separado definitivamente em 1710. Em 1730 retirou-se para Mantes la Jolie, onde morreu em 1745. Não\n         publicou nada em vida, pois afirmava que aprender a partir de páginas impressas era para músicos preguiçosos. O seu filho Jean-Baptiste\n         publicou a coleção de 32 Pièces de viole avec la Basse Continue do seu pai, acompanhada por transcrições para teclado e incluiu também três\n         obras próprias. Segundo alguns estudiosos, várias das obras publicadas sob nome do seu pai poderão na realidade ser da sua autoria.Juntamente\n         com Marin Marais, foi considerado pelos seus contemporâneos o maior virtuoso enquanto intérprete da viola de gamba. Desejava tocar em viola\n         de gamba tudo o que podiam fazer os músicos italianos com o violino. A sua capacidade para a improvisação era notável. Dizia-se que\n         interpretava como um demónio, opondo-se a Marin Marais, que o fazia como um anjo.",
       "dataNasc": "1671",
       "dataObito": "1745-06-28",
-      "periodo": "p1"
-    },
-    {
-      "id": "C156",
-      "nome": "Antonio Lotti",
-      "bio": "Antonio Lotti (1667 – 5 de janeiro de 1740) foi um compositor Italiano de música clássica.Lotti nasceu em Veneza, seu pai Matteo foi\n         Kapellmeister em Hanôver.Em 1682, começou a estudar com Lodovico Fuga e Giovanni Legrenzi, na Basílica de São Marcos de Veneza. Lotti fez sua\n         carreira primeiro como cantor alto (de 1689), depois como assistente do organista, como segundo organista(de 1692), (de 1704) como organista\n         principal, e, finalmente, (de 1736) como maestro di cappella, cargo que ocupou até sua morte. Também escreveu música, e ensinava, o Ospedale\n         degli Incurabili. Em 1717 foi-lhe dado permissão para ir a Dresden, onde várias de suas óperas foram produzidos, incluindo Giove em Argo,\n         Teofane e Elementi quattro Li (todos com libretos de Antonio Maria Lucchini). Retornou a Veneza em 1719 e lá permaneceu até sua morte em\n         1740.Lotti escreveu em uma variedade de formas, produzindo missas, cantatas, madrigais, cerca de trinta óperas e música instrumental. Suas\n         obras sacras para coral são frequentemente acompanhados (a cappella). Seu trabalho é considerado uma ponte entre o barroco e o estilo\n         clássico. Lotti influênciou compositores como Johann Sebastian Bach, George Frideric Handel, e Johann Dismas Zelenka, os quais possuíam\n         cópias da missa de Lotti, a Missa Sapientiae. Lotti foi um professor notável, de Domenico Alberti, Benedetto Marcello, Baldassare Galuppi,\n         Saratelli Giuseppe e Johann Dismas Zelenka entre seus alunos. Casou com a notável soprano Santa Stella.",
-      "dataNasc": "1667",
-      "dataObito": "1740",
-      "periodo": "p1"
-    },
-    {
-      "id": "C50",
-      "nome": "Antonio Lucio Vivaldi",
-      "bio": "Antonio Lucio Vivaldi (Veneza, 4 de março de 1678 — Viena, 28 de julho de 1741) foi um grande compositor e músico italiano do estilo\n         barroco tardio. Tinha a alcunha de il prete rosso (\"o padre ruivo\") por ser um sacerdote católico de cabelos ruivos. Compôs 770 obras, entre\n         as quais 477 concertos e 46 óperas. É sobretudo conhecido popularmente como autor da série de concertos para violino e orquestra Le quattro\n         stagioni (\"As Quatro Estações\").",
-      "dataNasc": "1678-03-04",
-      "dataObito": "1741-07-28",
-      "periodo": "p1"
-    },
-    {
-      "id": "C88",
-      "nome": "Antonio Maria Abbatini",
-      "bio": "Antonio Maria Abbatini (Città di Castello, 26 de janeiro de 1595 ou 1600 — agosto de 1679) foi um conhecido maestro e famoso compositor\n         italiano. Deu a forma de canto gregoriano aos Hinos da Igreja no ano de 1634 e deixou grande número de composições de música religiosa.",
-      "dataNasc": "1595-01-26",
-      "dataObito": "1679-03-15",
-      "periodo": "p2"
-    },
-    {
-      "id": "C148",
-      "nome": "Antonio Soler",
-      "bio": "Antonio Francisco Javier José Soler Ramos, usualmente mais conhecido hoje como Padre Antonio Soler, (batizado em 3 de Dezembro de 1729 –\n         morto em 20 de Dezembro de 1783) foi um compositor espanhol cujas obras estão enquadradas entre o barroco tardio e o período clássico.\n         Atualmente é mais conhecido por suas sonatas para teclado, uma importante contribuição para o repertório do cravo, piano e órgão.Soler nasceu\n         em Olot situado na província de Girona, Catalunha. Em 1736, com 6 anos, entrou para a escola do coro do grande Mosteiro de Montserrat onde\n         ele estudou com o maestro residente, Benit Esteve, e o organista Benito Valls. Em 1744 foi designado organista da catedral em Seo de Urgel\n         onde foi ordenado como sub-diácono. Mais tarde ele veio a ocupar os postos de mestre de capela em Leida e em El Escorial.Ele tornou-se padre\n         com 23 anos e sua rotina em Escorial, próximo a Madri, foi a mesma pelos próximos 31 anos. Seu dia de 20 horas eram divididos entre orações,\n         contemplações e cultivo da terra, uma vida simples e sem vaidades. Mesmo assim, neste ambiente austero, ele produziu mais de 500 obras\n         musicais. Entre elas, se situam cerca de 150 sonatas, muitas das quais, acredita-se que tenham sido escritas para seu aluno de música, o\n         Infante Don Gabriel, um dos filhos do rei Carlos III. Não são conhecidos retratos de Soler.Os trabalhos mais populares do Padre Soler são\n         suas sonatas para teclado que se comparam às de Domenico Scarlatti, com quem suspeita-se que ele tenha estudado. Entretanto, os trabalhos de\n         Soler são mais variados na forma do que os de Scarlatti, com algumas peças de três ou quatro movimentos, por exemplo, enquanto que as de\n         Scarlatti são de um ou, no máximo, dois movimentos. Felizmente, as sonatas de Soler foram catalogadas no início do século XX pelo Frei Samuel\n         Rubio e portanto a todas foi atribuído um número R.Soler também escreveu concertos, quintetos para órgão e cordas, motetos, missas e peças\n         para solo de órgão. Também escreveu, em 1762, um tratado sobre modulação: Llave de la modulación.Seus excelentes Seis Concertos para Dois\n         Órgãos ainda integram o repertório e têm sido gravados com freqüência. Um fandango anteriormente atribuído a Soler, que provavelmente tem\n         sido executado mais do que qualquer de suas outras obras, é agora tido como de autoria duvidosa.",
-      "dataNasc": "1729-12-03",
-      "dataObito": "1783-12-20",
-      "periodo": "p1"
-    },
-    {
-      "id": "C274",
-      "nome": "Ariosti, Attilio",
-      "bio": "Attilio Malachia Ariosti (5 de novembro de 1666 – 1729) foi um compositor, cantor e instrumentista da Itália.Foi ordenado monge em 1688 mas\n         logo pediu para deixar o hábito, tornando-se compositor da corte do Duque de Mântua e Monferrato. Em 1692 tornou-se diácono e organista da\n         Igreja de Santa Maria dos Servos em Bolonha. Em 1697 foi para Berlim a pedido da Eleitora Sofia Carlota de Hanôver, uma ativa patrona da\n         música, passando a trabalhar em sua corte e escrevendo numerosas óperas de sucesso. Exerceu funções para o governo austríaco e em 1716 suas\n         óperas receberam grande consagração em Paris e Londres. Em 1724 publicou uma coleção de cantatas e outra de Lições para Viola d'Amore, cujas\n         vendas foram o maior sucesso editorial de música do século XVIII. Cantava, escrevia libretos, e tocava violoncelo, cravo e em especial a\n         viola d'amore.",
-      "dataNasc": "1666-11-05",
-      "dataObito": "1729",
-      "periodo": "p1"
-    },
-    {
-      "id": "C128",
-      "nome": "Bach, Johann Christoph",
-      "bio": "Johann Christoph Bach (6 de Dezembro de 1642 - 31 de Março de 1703) foi um compositor, organista de Eisenach. Era tio de Johann Sebastian\n         Bach, filho de seu primo Johann Ambrosius Bach.",
-      "dataNasc": "1642-12-06",
-      "dataObito": "1703-03-31",
-      "periodo": "p2"
-    },
-    {
-      "id": "C152",
-      "nome": "Bach, Johann Michael",
-      "bio": "Johann Michael Bach (Arnstadt, * 9 de Agosto de 1648; † ? de Maio de 1694) foi um compositor alemão do período barroco.Ele era irmão do\n         também compositor Johann Christoph Bach, e sogro de Johann Sebastian Bach (foi o pai de Maria Barbara Bach, primeira esposa de Johann\n         Sebastian).Johann Michael nasceu em Arnstadt, filho de Heinrich Bach, tio-avô de Johann Sebastian Bach. Em 1673, Johann Michael se tronou\n         organista de Gehren, onde viveu até morrer. Além de compositor, ele construia instrumentos, como harpas. Algumas de suas obras mais famosas\n         foram as cantatas \"Ach, bleib bei uns, Herr Jesu Christ\" (para coral, violinos e contínuo), \"Liebster Jesu, hör mein Flehen\" (para soprano,\n         violinos e contínuo), e \"Ach, wie sehnlich wart' ich der Zeit\" (para soprano, violinos e continuo).",
-      "dataNasc": "1648-08-09",
-      "dataObito": "1694-05-17",
-      "periodo": "p2"
-    },
-    {
-      "id": "C278",
-      "nome": "Bach, Johann Sebastian",
-      "bio": "Johann Sebastian Bach (Eisenach, 31 de março de 1685 — Leipzig, 28 de julho de 1750) foi um compositor, cantor, cravista, maestro,\n         organista, professor, violinista e violista oriundo do Sacro Império Romano-Germânico, atual Alemanha.Nascido numa família de longa tradição\n         musical, cedo mostrou possuir talento e logo tornou-se um músico completo. Estudante incansável, adquiriu um vasto conhecimento da música\n         europeia de sua época e das gerações anteriores. Desempenhou vários cargos em cortes e igrejas alemãs, mas suas funções mais destacadas foram\n         a de Kantor da Igreja de São Tomás e Diretor Musical da cidade de Leipzig, onde desenvolveu a parte final e mais importante de sua carreira.\n         Absorvendo inicialmente o grande repertório de música contrapontística germânica como base de seu estilo, recebeu mais tarde a influência\n         italiana e francesa, através das quais sua obra se enriqueceu e transformou, realizando uma síntese original de uma multiplicidade de\n         tendências. Praticou quase todos os gêneros musicais conhecidos em seu tempo, com a notável exceção da ópera, embora suas cantatas maduras\n         revelem bastante influência desta que foi uma das formas mais populares do período Barroco.Sua habilidade ao órgão e ao cravo foi amplamente\n         reconhecida enquanto viveu e se tornou legendária, sendo considerado o maior virtuose de sua geração e um especialista na construção de\n         órgãos. Também tinha grandes qualidades como maestro, cantor, professor e violinista, mas como compositor seu mérito só recebeu aprovação\n         limitada e nunca foi exatamente popular, ainda que vários críticos que o conheceram o louvassem como grande. A maior parte de sua música caiu\n         no esquecimento após sua morte, mas sua recuperação iniciou no século XIX e desde então seu prestígio não cessou de crescer. Na apreciação\n         contemporânea Bach é tido como o maior nome da música barroca, e muitos o vêem como o maior compositor de todos os tempos, deixando muitas\n         obras que constituem a consumação de seu gênero. Entre suas peças mais conhecidas e importantes estão os Concertos de Brandenburgo, o Cravo\n         Bem-Temperado, as Sonatas e Partitas para violino solo, a Missa em Si Menor, a Tocata e Fuga em Ré Menor, a Paixão segundo São Mateus, a\n         Oferenda Musical, a Arte da Fuga e várias de suas cantatas.",
-      "dataNasc": "1685-03-21",
-      "dataObito": "1750-07-28",
-      "periodo": "p1"
-    },
-    {
-      "id": "C238",
-      "nome": "Bach, Wilhelm Friedemann",
-      "bio": "Wilhelm Friedemann Bach (22 de Novembro, 1710 - 1 de Julho, 1784) foi músico e compositor alemão.Era o primogênito e filho predileto de\n         Johann Sebastian Bach, e era dotado de grande talento. Para sua educação musical seu pai escreveu o Clavierbüchlein. Apesar de seus dotes,\n         não era disciplinado, e antes dos quarenta anos deixou os empregos estáveis para tentar a vida boêmia de músico itinerante, chegando em\n         muitas ocasiões a enfrentar dificuldades financeiras, quando era obrigado a vender bens pessoais e manuscritos paternos recebidos em herança\n         para poder subsistir. Foi muito aprecido por sua capacidade de improvisar e deixou boa quantidade de música para teclado de excelente\n         qualidade, cujas características antecipam a tensão e emocionalismo do Romantismo.",
-      "dataNasc": "1710-11-22",
-      "dataObito": "1784-07-01",
-      "periodo": "p1"
-    },
-    {
-      "id": "C336",
-      "nome": "Balbastre, Claude",
-      "bio": "Claude Balbastre (8 de dezembro de 1724, Dijon - 1799, Paris) foi um compositor, clavenista e organista francês do século XVIII.",
-      "dataNasc": "1724-12-08",
-      "dataObito": "1799-05-09",
-      "periodo": "p1"
-    },
-    {
-      "id": "C28",
-      "nome": "Baldassare Galuppi",
-      "bio": "Baldassare Galuppi (Burano, 18 de Outubro de 1706 – Veneza, 3 de Janeiro de 1785) foi um compositor italiano.",
-      "dataNasc": "1706-10-18",
-      "dataObito": "1785-01-03",
-      "periodo": "p1"
-    },
-    {
-      "id": "C282",
-      "nome": "Barbara of Portugal",
-      "bio": "Dona Maria Bárbara de Bragança (Lisboa, 4 de dezembro de 1711 — Aranjuez, 27 de agosto de 1758) foi uma princesa portuguesa e rainha\n         consorte de Espanha como esposa de Fernando VI.D. Bárbara era a única filha de D. João V e da sua consorte, a arquiduquesa D. Maria Ana de\n         Áustria, filha de Leopoldo I, Sacro Imperador Romano-Germânico. Como filha mais velha do monarca, D. Bárbara assumiu o título de Princesa da\n         Beira.Como era normal na época contraiu, juntamente com o irmão, o Príncipe do Brasil e futuro D. José I, um matrimónio político. No caso foi\n         combinado um matrimónio duplo com filhos de Filipe V de Espanha, destinado a melhorar as relações entre as duas coroas ibéricas após a Guerra\n         da Sucessão Espanhola. O duplo casamento do príncipe herdeiro português e da princesa com os congéneres espanhóis passou para a história como\n         a Troca das Princesas. Por se ter realizado no Rio Caia, na fronteira entre os dois reinos, é também conhecido como a Jornada do Caia.",
-      "dataNasc": "1711-12-04",
-      "dataObito": "1758-08-27",
-      "periodo": "p1"
-    },
-    {
-      "id": "C334",
-      "nome": "Benda, Franz",
-      "bio": "František Benda (em língua alemã: Franz Benda) (batismo em 22 de novembro de 1709 – 7 de março de 1786) foi um compositor e violinista da\n         Boémia. Era irmão de Georg Benda.",
-      "dataNasc": "1709-11-22",
-      "dataObito": "1786-03-07",
       "periodo": "p1"
     },
     {
@@ -153,76 +17,12 @@
       "periodo": "p2"
     },
     {
-      "id": "C322",
-      "nome": "Biber, Carl Heinrich",
-      "bio": "Carl Heinrich Biber (Salzburgo, 1681 — 1749) foi um violinista e compositor do barroco tardio. Foi o sexto filho de Heinrich Ignaz Franz\n         von Biber, e recebeu a sua formação musical com seu pai. A partir de 1714 ele foi vice-mestre de capela (Kapellmeister) na Corte de\n         Salzburgo. Foi supervisor de Leopold Mozart. O seu trabalho consiste, principalmente em missas e outras obras litúrgicas.",
-      "dataNasc": "1681-09-04",
-      "dataObito": "1749-11-19",
-      "periodo": "p1"
-    },
-    {
-      "id": "C292",
-      "nome": "Biber, Heinrich Ignaz Franz",
-      "bio": "Heinrich Ignaz Franz von Biber (Wartenberg atual Stráž pod Ralskem - República Checa, 12 de Agosto de 1644 – 3 de Maio de 1704) foi um\n         compositor e violinista virtuose barroco. Em 1670 foi enviado por seu patrono à Boêmia para adquirir novos violinos, porem nunca retornou. Em\n         1660 ingressou na grupo musical do Príncipe-bispo Karl Liechtenstein-Kastelkorn, em Olomouc onde se consolidou como compositor e violinista.\n         Foi colocado como primeiro violino no castelo de Kroměříž e na corte de Salzburg. Em 1684 foi nomeado “Kapellmeister” (Mestre de capela) em\n         Salzburg. Tem uma vasta produção, que foi recuperada e é interpretada até hoje. Serviu à nobreza com afinco, provavelmente sem participar de\n         turnês por outros países. Foi inovador, trazendo para o repertório de violinos, técnicas inovadores e uma estética diferenciada. São\n         relevantes obras de Biber as pitorescas e virtuosísticas Sonatas de Biber, com destaque para a Mystery (Rosary) Sonatas, com que inclue novas\n         técnicas e tonalidades incomuns. É pai de Carl Heinrich Biber.",
-      "dataNasc": "1644-08-12",
-      "dataObito": "1704-05-03",
-      "periodo": "p2"
-    },
-    {
       "id": "C166",
       "nome": "Bononcini, Giovanni Battista",
       "bio": "Giovanni Battista Bononcini (Modena, 18 de julho de 1670 – 9 de julho de 1747) foi um compositor e violoncelista italiano.Era filho do\n         compositor Giovanni Maria Bononcini e irmão de Antonio Maria Bononcini, também compositor. Estudou violoncelo em Bolonha e depois serviu como\n         mestre de capela em Milão, Roma, Viena e Berlim. Entre 1720 e 1735 viveu na Inglaterra e competiu com Händel na ópera. Deixou algumas obras\n         para violoncelo, música de câmara, música sacra e várias óperas: Xerse (1694) Il trionfo di Camilla (1696) L'amore eroica fra pastori (1696)\n         La clemenza di Augusto (1697) La fede pubblica (1699) Cefalo (1702) Etearco (1707) Maria fuggitivo (1708) Astarto (1720) L'odio e l'amore\n         (1721) Crispo (1721) Griselda (1722) Erminia (1723) Calphurnia (1724) Astianatte (1727) Alessandro in Sidone (1737)",
       "dataNasc": "1670-07-18",
       "dataObito": "1747-07-09",
       "periodo": "p1"
-    },
-    {
-      "id": "C326",
-      "nome": "Bonporti, Francesco Antonio",
-      "bio": "Francesco Antonio Bonporti (11 de Junho de 1672 – 19 de Dezembro de 1749) foi um padre e compositor amador italiano.Natural da cidade de\n         Trento, em 1691 ele foi admitido no Collegium Germanicum em Roma, onde ele estudou teologia. Lá, ele estudou composição musical sob os\n         cuidados de Giuseppe Ottavio Pitoni e, apesar de não ser confirmado, violino com Arcangelo Corelli.De volta à cidade de Trento, ele se tornou\n         padre em 1695. Em 1740 ele se mudou para Pádua, onde ele viveu até a sua morte. Ele influenciou Johann Sebastian Bach no desenvolvimento da\n         invenção, e de fato muitos de seu trabalho foi incluído nas invenções de Bach. Na realidade, Bach havia transcrito para o cravo quatro peças\n         em violino da op. X de Bonporti (1712).O trabalho musical de Bonporti consiste em doze óperas, publicadas entre 1696 e 1736. Ele morreu em\n         Pádua no ano de 1749.",
-      "dataNasc": "1672-06-11",
-      "dataObito": "1749-12-19",
-      "periodo": "p1"
-    },
-    {
-      "id": "C318",
-      "nome": "Boyvin, Jacques",
-      "bio": "Jacques Boyvin (Paris (?), entre 1649 e 1655; Ruão, 30 de julho de 1706) foi um organista francês e compositor do período da\n         Renascença.",
-      "dataNasc": "1649",
-      "dataObito": "1706",
-      "periodo": "p2"
-    },
-    {
-      "id": "C202",
-      "nome": "Bull, John",
-      "bio": "John Bull (1562 ou 1563 – 15 de março 1628) foi um compositor inglês, músico e organista.",
-      "dataNasc": "1562",
-      "dataObito": "1628",
-      "periodo": "p2"
-    },
-    {
-      "id": "C272",
-      "nome": "Cabanilles, Juan Bautista",
-      "bio": "Juan Cabanilles (Algemesí, 6 de setembro de 1644; Valência, 29 de abril de 1712) foi um organista espanhol e compositor do período da\n         Renascença.",
-      "dataNasc": "1644",
-      "dataObito": "1712",
-      "periodo": "p2"
-    },
-    {
-      "id": "C168",
-      "nome": "Caldara, Antonio",
-      "bio": "Antonio Caldara (Veneza, 1670 — Viena, 26 de dezembro 1736) foi um compositor italiano do período barroco, conhecido como compositor de\n         óperas, cantatas e oratórios. Várias das suas obras têm libretto de Metastasio. Caldara nasceu em Veneza em data desconhecida, numa família\n         de músicos. Seu primeiro professor foi seu pai, Giuseppe, que foi violinista. Aos onze anos, estudou sob a direcção de Giovanni Legrenzi onde\n         foi corista na Catedral de San Marco em Veneza, onde aprendeu vários instrumentos. Em 1699 mudou-se para Mântua, onde se tornou Mestre di\n         cappella Charles IV, Duque de Mântua.Foi um dos mais prolíficos autores da sua geração. Caldara ocupou cargos importantes em Mântua, Roma e\n         Viena, num momento em que a música vocal italiana estava a atravessar um processo de desenvolvimento rápido. Durante os anos seguintes, fez\n         inúmeras viagens na Itália e no estrangeiro. Em 1708 é contratado pelo arquiduque Carlos, e mudou-se para Barcelona, onde compõe várias\n         óperas que representam as primeiras óperas italianas da Península Ibérica. Sua ópera Il più bel nome nei festeggiarsi il Nome Felicissimo di\n         Sua Maestà Cattolica Elisabetha Christina Regina delle Spagne é apresentada na Llotja de Mar, em Agosto de 1708, para celebrar o casamento do\n         arquiduque com Elisabeth Christine de Brunswick-Wolfenbüttel.Caldara, irá influenciar a escola de Mannheim, bem como Haydn e Mozart.",
-      "dataNasc": "1670",
-      "dataObito": "1736-12-28",
-      "periodo": "p1"
-    },
-    {
-      "id": "C122",
-      "nome": "Carissimi, Giacomo",
-      "bio": "Giacomo Carissimi (1605 - 1674) foi um compositor italiano. Desde os vinte e três anos até sua morte, Carissimi foi maestro di cappella em\n         Sant'Appolinare, igreja do Cellegio Germanico jesuíta em Roma, renomado pela tradição musical. Com estilo simples mas eficiente consolidou a\n         forma do oratório latino, usando a música como uma espécie de sermão para ilustrar vividamente um aspecto religioso. É famoso, também, por\n         ter praticamente inventado a cantata, cujo texto em geral lida com o amo não-correspondido. Sabe-se que Carissimi era um prolífico autor de\n         motetos e cantatas, embora muitas de suas composições tenham sido destruídas ou se perderam.",
-      "dataNasc": "1605-04-18",
-      "dataObito": "1674-01-12",
-      "periodo": "p2"
     },
     {
       "id": "C138",
@@ -233,51 +33,11 @@
       "periodo": "p2"
     },
     {
-      "id": "C120",
-      "nome": "Cavalli, Francesco",
-      "bio": "Francesco Cavalli (14 de fevereiro de 1602 — 14 de janeiro de 1676) foi um compositor italiano do início do período Barroco. O seu nome,\n         Pietro Francesco Caletti-Bruni, é mais conhecido de Cavalli, o nome do seu patrono, um nobre veneziano. Cavalli foi um parceiro próximo (e\n         talvez aluno) de Claudio Monteverdi, cuja morte o fez assumir a liderança entre os compositores e músicos de Veneza. Nascido Francesco\n         Caletto, era um grande cantor e entrou para o coro de São Marcos sob a direção de Monteverdi, tornando-se enfim seu organista. A princípio\n         compositor de música sacra (em grande parte perdida), depois de um casamento por dinheiro voltou-se para projetos cênicos. Com a explosão da\n         ópera, escreveu cerca de quarenta de grande sucesso, como Equisto, Giasone, Xerxes e Erismena sendo encenadas em toda a Itália. Ao contrário\n         das primeiras óperas acadêmicas, as de Cavalli tinham ritmo mais ágil e eram cômicas, explorando o contraste entre recitativo e ária. Seu\n         apelo de bilheteria declinou após sua morte, mas sua reputação continua intacta.",
-      "dataNasc": "1602-02-14",
-      "dataObito": "1676-01-14",
-      "periodo": "p2"
-    },
-    {
-      "id": "C116",
-      "nome": "Cesti, Antonio",
-      "bio": "Pietro Antonio Cesti (Arezzo, 5 de agosto 1623 – Firenze, 14 de outubro 1669), conhecido como Marc'Antonio Cesti foi um compositor italiano\n         da época barroca, era um cantor (tenor) e organista. Foi \"o mais famoso músico italiano da sua geração\"[1].",
-      "dataNasc": "1623-08-05",
-      "dataObito": "1669-10-14",
-      "periodo": "p2"
-    },
-    {
       "id": "C94",
       "nome": "Corelli, Arcangelo",
       "bio": "Arcangelo Corelli (Fusignano, 17 de Fevereiro de 1653 — Roma, 8 de Janeiro de 1713) foi o mais famoso violinista-compositor do barroco, a\n         um dos mais influentes depois de Claudio Monteverdi. Embora sua produção integral resuma-se a seis antologias, sua escrita instrumental era\n         admirada pelo refinamento harmônico e estilo brilhante, tendo sido referência crucial para muitos compositores, entre eles Johann Sebastian\n         Bach e Georg Friedrich Haendel.Pouco se sabe sobre a vida de Corelli, a não ser que a maior parte de sua carreira deu-se em Roma. Ali foi\n         patrocinado por diversos mecenas aristocratas e nobres, incluindo a exilada rainha da Suécia. Era regularmente contratado para apresentações\n         de ópera, oratórios e outras obras de formato amplo, algumas de Haendel. Corelli é conhecido sobretudo por seus doze concerti grossi, que\n         representaram uma nova forma de composição. Como violinistra virtuose, contribuiu para consolidar modernas técnicas de arcada e foi um dos\n         primeiros a usar bicordes e efeitos harmônicos no instrumento. Como professor de violino, suas realizações também foram notáveis, tendo entre\n         seus alunos Francesco Geminiani e Antonio Vivaldi.Entre suas obras mais notáveis estão o Concerto Grosso Op.6 N.8, Concerto Grosso Op.6 N.10\n         e Sonate a Violino e Violine o Cimbalo Op.5 N.12. Corelli escreveu ainda 12 sonatas para instrumento solista (para violino e contínuo) e 12\n         concertos grossos (grossi, em italiano), com os quais influenciou o estilo musical de sua época.Corelli foi especialmente genial em diversas\n         medidas. Ele explorou alguns gêneros. Pai do gênero das sonatas, algo para ser tocado \"suonare\". A mais simples das novas formas é a Sonata\n         para Violino. Com acompanhamento com baixo sifão. O que são as Sonatas? Sonata é uma forma e um gênero. Arranjo simples entre violino e um\n         instrumento que acompanha ( cravo). As vezes o cravo dobrado com o violoncelo. Opus 5, por exemplo. 12 sonatas para violino. São as primeiras\n         peças do gênero. Música organizada em movimentos especificas: um lento, um rápido, um lento, um rápido ( 4, 5, 6 ou mais vezes se dá essa\n         repetição). Veja que as Suites de Lully na França são as percursoras das Sonatas de Corelli.Também fez parte da Academia de Letras de\n         Roma.",
       "dataNasc": "1653-02-17",
       "dataObito": "1713-01-08",
-      "periodo": "p1"
-    },
-    {
-      "id": "C300",
-      "nome": "Couperin, Armand-Louis",
-      "bio": "Armand-Louis Couperin (25 de fevereiro de 1727 - 2 de fevereiro 1789) foi um compositor e organista francês do final do Barroco e início do\n         período Clássico. Ele era um membro da família dos músicos Couperin, dos quais o mais notório foi o seu grande tio Louis e seu primo\n         François.",
-      "dataNasc": "1727-02-25",
-      "dataObito": "1789-02-02",
-      "periodo": "p1"
-    },
-    {
-      "id": "C124",
-      "nome": "Cristofaro Caresana",
-      "bio": "Cristofaro Caresana (Veneza, c. 1640 - Nápoles, 1709) foi um compositor, organista e tenor barroco da Itália, um dos primeiros\n         representantes da escola napolitana de ópera. É lembrado por suas cantatas, assim como interlúdios musicais.",
-      "dataNasc": "1640",
-      "dataObito": "1709",
-      "periodo": "p2"
-    },
-    {
-      "id": "C106",
-      "nome": "David Perez",
-      "bio": "David ou Davide Perez (Nápoles, 1711 — Lisboa, 30 de outubro de 1778) foi um compositor italiano, filho de uma família de origem espanhola.\n         Estudou violino com Antonio Gallo, um dos melhores violinistas italianos da época, e contraponto com Francisco Mancini, mestre do\n         Conservatório de Loreto.Serviu como maestro na Real Capela Palatina de Palermo até 1748. Em 1752, estreia a sua opera Zenobia em Milão e\n         nesse mesmo ano é contratado por ordem de D. José I para ser mestre dos seus filhos e compositor da corte, estreando logo no Carnaval\n         seguinte duas das suas óperas: Demofoonte e Andriano in Siria.Naquela época, estava a construir-se o grande Teatro da Ribeira, o qual, sendo\n         estreado em 1755, seria destruído nesse mesmo ano pelo terramoto. Este foi inaugurado com a obra Alessandro nell'Indie, teve uma audiência de\n         400 homens, o que mostra a grandiosidade do teatro. Apesar do terramoto, Perez não foge de Portugal, e vai, mais tarde, apresentando o seu\n         trabalho.Sendo maestro da Capela Real, escreveu um grande quantidade de música sacra. Alguns afirmam que Perez teria ficado cego na velhice e\n         teria morrido em 1778, mas não se sabe com certeza. Pois há uma prova que demonstra que em 1780, tendo resolvido regressar à sua pátria, o\n         navio no qual viajava foi assaltado por dois barcos piratas. Esta prova foi publicada pelo investigador Ribeiro Guimarães num artigo do\n         Jornal do Comercio, de 30 de Novembro de 1867. David Perez exerceu uma grande influência nos compositores portugueses florescidos nos finais\n         do século XVIII e princípios XIX. Em todos eles, inclusive, Marcos Portugal se nota influência. A sua assinatura na Irmandade de S. Cecília\n         consta com a data de 28 de Setembro de 1756.",
-      "dataNasc": "1711",
-      "dataObito": "1778-10-30",
       "periodo": "p1"
     },
     {
