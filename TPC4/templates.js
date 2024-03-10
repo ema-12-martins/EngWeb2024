@@ -74,3 +74,32 @@ exports.paginaCompositor = function(compositores){
     return pagHTML;
 }
 
+exports.paginaPeriodos = function(periodos){
+    var pagHTML = `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="w3.css"/>
+            <title>Pagina Compositores</title>
+        </head>
+        <body>
+            <div class="w3-card-4">
+                <header class="w3-container w3-teal">
+                    <h1>Periodos</h1>
+                </header>
+                <table class="w3-table w3-bordered">`;
+
+    for(let i=0; i < periodos.length ; i++){
+        pagHTML +=`
+                    <tr>
+                    <td><a href="/periodos/${periodos[i].id}">${periodos[i].nome}</a></td>
+                    </tr>`;
+    }
+    pagHTML += `
+                </table>
+            </div>
+        </body>
+    </html>`;
+    return pagHTML;
+}

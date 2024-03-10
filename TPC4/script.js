@@ -37,6 +37,21 @@ http.createServer((req, res) => {
                 res.write("<p>Nao foi possivel carregar a pagina do compositor</p>")
                 res.end()
             })
+    
+        }else if (req.url == '/periodos') {
+        axios.get("http://localhost:3000/periodos_musicais?_sort=nome")
+            .then(resp=>{
+                periodos=resp.data
+                pag_periodos=templates.paginaPeriodos(periodos)
+                res.writeHead(202,{'Content-Type':'text/html;charset=utf-8'})
+                res.write(pag_periodos)
+                res.end()
+            })
+            .catch(erro=>{
+                res.writeHead(502,{'Content-Type':'text/html;charset=utf-8'})
+                res.write("<p>Nao foi possivel carregar a pagina dos periodos</p>")
+                res.end()
+            })
 
     } else if (req.url == '/w3.css') {
         fs.readFile("w3.css", (erro, dados) => {
