@@ -7,6 +7,8 @@ var templates = require('./templates')
 //what occores if the user searchs for /compositores
 http.createServer((req, res) => {
     console.log(req.method + " " + req.url);
+
+    //List compositores
     if (req.url == '/compositores') {
         axios.get("http://localhost:3000/compositores?_sort=nome")
             .then(resp=>{
@@ -21,8 +23,11 @@ http.createServer((req, res) => {
                 res.write("<p>Nao foi possivel carregar a pagina de compositores</p>")
                 res.end()
             })
+
+    //Page compositor
     }else if (/\/compositores\/C[0-9]+$/i.test(req.url)) {
         id = req.url.split('/')[2]
+        console.log(id)
         axios.get("http://localhost:3000/compositores?id="+id)
             .then(resp=>{
                 compositor=resp.data
@@ -38,21 +43,43 @@ http.createServer((req, res) => {
                 res.end()
             })
     
-        }else if (req.url == '/periodos') {
-        axios.get("http://localhost:3000/periodos_musicais?_sort=nome")
+    //Delete some compositor
+    }else if(/\/compositores\/delete\/C[0-9]+$/i.test(req.url)){
+        id = req.url.split('/')[3]
+        console.log(id)
+        axios.delete("http://localhost:3000/compositores/"+id)
             .then(resp=>{
-                periodos=resp.data
-                pag_periodos=templates.paginaPeriodos(periodos)
                 res.writeHead(202,{'Content-Type':'text/html;charset=utf-8'})
-                res.write(pag_periodos)
+                res.write("<p>Registo Apagado</p>")
+                res.write('<a href="http://localhost:9040/compositores" class="button">Voltar</a>')
                 res.end()
+
             })
             .catch(erro=>{
                 res.writeHead(502,{'Content-Type':'text/html;charset=utf-8'})
-                res.write("<p>Nao foi possivel carregar a pagina dos periodos</p>")
+                res.write("<p>Nao foi possivel eliminar compositor</p>")
                 res.end()
             })
 
+
+    
+    //List periodos
+    }else if (req.url == '/periodos') {
+    axios.get("http://localhost:3000/periodos_musicais?_sort=nome")
+        .then(resp=>{
+            periodos=resp.data
+            pag_periodos=templates.paginaPeriodos(periodos)
+            res.writeHead(202,{'Content-Type':'text/html;charset=utf-8'})
+            res.write(pag_periodos)
+            res.end()
+        })
+        .catch(erro=>{
+            res.writeHead(502,{'Content-Type':'text/html;charset=utf-8'})
+            res.write("<p>Nao foi possivel carregar a pagina dos periodos</p>")
+            res.end()
+        })
+    
+    //Get the stylesheet
     } else if (req.url == '/w3.css') {
         fs.readFile("w3.css", (erro, dados) => {
             res.writeHead(200, { 'Content-type': 'text/css' });

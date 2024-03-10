@@ -18,6 +18,7 @@ exports.paginaCompositores = function(compositores){
         pagHTML +=`
                     <tr>
                     <td><a href="/compositores/${compositores[i].id}">${compositores[i].nome}</a></td>
+                    <td><a href="http://localhost:9040/compositores/delete/${compositores[i].id}" class="button">Eliminar</a></td>
                     </tr>`;
     }
     pagHTML += `
