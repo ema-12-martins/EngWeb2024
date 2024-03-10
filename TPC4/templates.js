@@ -53,6 +53,8 @@ exports.paginaCompositor = function(compositores){
                             <th>Data Nascimento</th>
                             <th>Data Obito</th>
                             <th>Periodo</th>
+                            <th>Periodo id</th>
+
                         </tr>`;
 
     // Iterate over each composer in the array
@@ -65,6 +67,7 @@ exports.paginaCompositor = function(compositores){
                             <td>${compositores[i].dataNasc}</td>
                             <td>${compositores[i].dataObito}</td>
                             <td>${compositores[i].periodo}</td>
+                            <td>${compositores[i].periodo_id}</td>
                         </tr>`;
     }
 
@@ -77,6 +80,7 @@ exports.paginaCompositor = function(compositores){
     return pagHTML;
 }
 
+// HTML Template Issues
 exports.paginaEditarCompositor = function(compositor){
     var pagHTML = `
     <!DOCTYPE html>
@@ -87,21 +91,25 @@ exports.paginaEditarCompositor = function(compositor){
             <title>Editar Compositor</title>
         </head>
         <body>
-            <form class="w3-container" method="POST">
+            <form class="w3-container" method="POST" action="/compositores/edit/${compositor.id}"> <!-- Correct form action -->
                 <fieldset>
                     <legend>Informações</legend>
+                    <label>Id</label>
+                    <input class="w3-input w3-round" type="text" name="id" value="${compositor.id}"/>
                     <label>Nome</label>
-                    <input class="w3-input w3-round" type="text" name="name" value="${compositor.nome}"/>
+                    <input class="w3-input w3-round" type="text" name="nome" value="${compositor.nome}"/>
                     <label>Bio</label>
                     <input class="w3-input w3-round" type="text" name="bio" value="${compositor.bio}"/>
                     <label>Data nascimento:</label>
-                    <input class="w3-input w3-round" type="text" name="dataNas" value="${compositor.dataNasc}"/>
+                    <input class="w3-input w3-round" type="text" name="dataNasc" value="${compositor.dataNasc}"/>
                     <label>Data obito:</label>
-                    <input class="w3-input w3-round" type="text" name="dataOb" value="${compositor.dataObito}"/>
+                    <input class="w3-input w3-round" type="text" name="dataObito" value="${compositor.dataObito}"/>
                     <label>Periodo:</label>
                     <input class="w3-input w3-round" type="text" name="periodo" value="${compositor.periodo}"/>
+                    <label>Periodo id:</label>
+                    <input class="w3-input w3-round" type="text" name="periodo_id" value="${compositor.periodo_id}"/>
                 </fieldset>
-                <button class="w3-btn w3-purple w3-mb-2" type="submit">Register</button>
+                <button class="w3-btn w3-purple w3-mb-2" type="submit">Alterar</button>
             </form>
         </body>
     </html>`;
@@ -118,7 +126,7 @@ exports.paginaCriaCompositor = function(){
             <title>Criar Compositor</title>
         </head>
         <body>
-            <form class="w3-container" method="POST">
+            <form class="w3-container" method="POST" action="/compositores/new"> <!-- Correct form action -->
                 <fieldset>
                     <legend>Informações</legend>
                     <label>Nome</label>
@@ -132,14 +140,12 @@ exports.paginaCriaCompositor = function(){
                     <label>Periodo:</label>
                     <input class="w3-input w3-round" type="text" name="periodo"/>
                 </fieldset>
-                <button class="w3-btn w3-purple w3-mb-2" type="submit">Register</button>
+                <button class="w3-btn w3-purple w3-mb-2" type="submit">Registar</button>
             </form>
         </body>
     </html>`;
     return pagHTML;
 }
-
-
 
 
 exports.paginaPeriodos = function(periodos){
