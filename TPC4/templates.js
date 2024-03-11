@@ -11,17 +11,17 @@ exports.paginaCompositores = function(compositores){
             <div class="w3-card-4">
                 <header class="w3-container w3-teal">
                     <h1>Compositores</h1>
-                    <a href="http://localhost:9040/compositores/new" class="w3-btn w3-purple w3-mb-2">Registar novo compositor</a>
+                    <a href="/compositores/new" class="w3-btn w3-purple w3-mb-2">Registar novo compositor</a>
                 </header>
                 <table class="w3-table w3-bordered">`;
 
     for(let i=0; i < compositores.length ; i++){
         pagHTML +=`
-                    <tr>
-                    <td><a href="/compositores/${compositores[i].id}">${compositores[i].nome}</a></td>
-                    <td><a href="http://localhost:9040/compositores/delete/${compositores[i].id}" class="button">Eliminar</a></td>
-                    <td><a href="http://localhost:9040/compositores/edit/${compositores[i].id}" class="button">Editar</a></td>
-                    </tr>`;
+            <tr>
+            <td><a href="/compositores/${compositores[i].id}">${compositores[i].nome}</a></td>
+            <td><a href="/compositores/delete/${compositores[i].id}" class="button">Eliminar</a></td>
+            <td><a href="/compositores/edit/${compositores[i].id}" class="button">Editar</a></td>
+            </tr>`;
     }
     pagHTML += `
                 </table>
