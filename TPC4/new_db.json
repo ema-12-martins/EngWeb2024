@@ -18,14 +18,6 @@
       "periodo_id": "p1"
     },
     {
-      "id": "C206",
-      "nome": "Alessandro Stradella",
-      "bio": "Alessandro Stradella (Nepi, 3 de abril de 1639 – Génova, 25 de fevereiro de 1682) foi um cantor, professor de canto, violinista e\n         compositor italiano. Foi assassinado em Gênova por razões obscuras, no segundo atentado contra sua vida. O primeiro fora em 1677, após seu\n         complicado casamento com Agnese, aluna com quem fugira e cujo ex-amante encomendou o crime, causando um incidente internacional. Durante o\n         caso, Stradella continuou a promover suas músicas, passando a receber encomendas da nobreza. Compôs suas melhores obras num tempo curto,\n         entre elas cento e setenta cantatas, várias óperas e a primeira peça apontada como um concerto grosso.",
-      "dataNasc": "1639-04-03",
-      "dataObito": "1682-02-25",
-      "periodo": "Renascimento"
-    },
-    {
       "id": "C76",
       "nome": "Altnickol, Johann Christoph",
       "bio": "Johann Christoph Altnickol, ou Altnikol, (1719? (bat. 1 de janeiro de 1720) - 25 de julho de 1759) foi um organista, baixista, cantor e\n         compositor alemão. Ele era genro e copista de Johann Sebastian Bach.",
@@ -33,24 +25,6 @@
       "dataObito": "1759-07-25",
       "periodo": "Barroco",
       "periodo_id": "p1"
-    },
-    {
-      "id": "C192",
-      "nome": "Andrea Falconieri",
-      "bio": "Andrea Falconieri (Nápoles, 1585 or 1586 - ?, 1656), também conhecido como Falconiero, foi um compositor e alaudista italiano.Viveu em\n         Parma de 1604 a 1614, depois em Roma e finalmente voltou a Nápoles, onde, em 1647, tornou-se maestro di cappella da capela real.",
-      "dataNasc": "1585",
-      "dataObito": "1656",
-      "periodo": "Renascimento",
-      "periodo_id": "p2"
-    },
-    {
-      "id": "C242",
-      "nome": "Anerio, Felice",
-      "bio": "Felice Anerio (Narni, 1560 – Roma, 26 ou 27 de setembro de 1614) foi um compositor italiano do final da Renascença e início do Barroco, e\n         membro da Escola romana de compositores. Foi o irmão mais velho de outro importante, e um pouco mais progressista compositor do mesmo\n         período, Giovanni Francesco Anerio.",
-      "dataNasc": "1560",
-      "dataObito": "1614",
-      "periodo": "Renascimento",
-      "periodo_id": "p2"
     },
     {
       "id": "C204",

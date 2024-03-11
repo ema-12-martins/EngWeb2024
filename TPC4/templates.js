@@ -54,21 +54,20 @@ exports.paginaCompositor = function(compositores){
                             <th>Data Obito</th>
                             <th>Periodo</th>
                             <th>Periodo id</th>
-
                         </tr>`;
 
     // Iterate over each composer in the array
     for(let i = 0; i < compositores.length; i++){
         pagHTML += `
-                        <tr>
-                            <td>${compositores[i].id}</td>
-                            <td>${compositores[i].nome}</td>
-                            <td>${compositores[i].bio}</td>
-                            <td>${compositores[i].dataNasc}</td>
-                            <td>${compositores[i].dataObito}</td>
-                            <td>${compositores[i].periodo}</td>
-                            <td>${compositores[i].periodo_id}</td>
-                        </tr>`;
+        <tr>
+            <td>${compositores[i].id}</td>
+            <td>${compositores[i].nome}</td>
+            <td>${compositores[i].bio}</td>
+            <td>${compositores[i].dataNasc}</td>
+            <td>${compositores[i].dataObito}</td>
+            <td>${compositores[i].periodo}</td>
+            <td>${compositores[i].periodo_id}</td>
+        </tr>`;
     }
 
     pagHTML += `
@@ -91,7 +90,7 @@ exports.paginaEditarCompositor = function(compositor){
             <title>Editar Compositor</title>
         </head>
         <body>
-            <form class="w3-container" method="POST" action="/compositores/edit/${compositor.id}"> <!-- Correct form action -->
+            <form class="w3-container" method="POST" action="/compositores/edit/${compositor.id}"> 
                 <fieldset>
                     <legend>Informações</legend>
                     <label>Id</label>
@@ -126,19 +125,25 @@ exports.paginaCriaCompositor = function(){
             <title>Criar Compositor</title>
         </head>
         <body>
-            <form class="w3-container" method="POST" action="/compositores/new"> <!-- Correct form action -->
+        <form class="w3-container" method="POST">
                 <fieldset>
                     <legend>Informações</legend>
+
                     <label>Nome</label>
-                    <input class="w3-input w3-round" type="text" name="name"/>
+                    <input class="w3-input w3-round" type="text" name="nome"/>
+
                     <label>Bio</label>
                     <input class="w3-input w3-round" type="text" name="bio"/>
+
                     <label>Data nascimento:</label>
-                    <input class="w3-input w3-round" type="text" name="dataNas"/>
+                    <input class="w3-input w3-round" type="text" name="dataNasc"/>
+
                     <label>Data obito:</label>
-                    <input class="w3-input w3-round" type="text" name="dataOb"/>
+                    <input class="w3-input w3-round" type="text" name="dataObito"/>
+
                     <label>Periodo:</label>
                     <input class="w3-input w3-round" type="text" name="periodo"/>
+                    
                 </fieldset>
                 <button class="w3-btn w3-purple w3-mb-2" type="submit">Registar</button>
             </form>
