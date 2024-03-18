@@ -14,7 +14,7 @@
     </meta>
     <resumo>
         <p>Este trabalho tem como objetivo gerar um servidor que permita criar uma página HTML com uma lista das cidade, ordenadas alfabeticamente. Quando um utilizador clicar numa das cidades, deve ser aberta uma nova página que contém as informações dessa rua (descrição, fotos, casas...). A informação das páginas foi obtida através de um json-server.</p>
-        <p>Terceiro Paragrafos com <url>https://github.com/ema-12-martins/EngWeb2024/tree/main/TPC2</url><texto>Repositório</texto></p>
+        <p><url>https://github.com/ema-12-martins/EngWeb2024/tree/main/TPC2</url><texto>Repositório</texto></p>
     </resumo>
     <resultados>
         <resultado> Com um servidor json com o mapa virtual, correndo o servidor, é possível obter as páginas pretendidas.</resultado>
