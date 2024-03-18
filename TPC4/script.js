@@ -52,7 +52,7 @@ http.createServer((req, res) => {
                     .then(resp=>{
                         compositor=resp.data
                         pag_compositor=templates.paginaCompositor(compositor)
-                        res.writeHead(201,{'Content-Type':'text/html;charset=utf-8'})
+                        res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                         res.write(pag_compositor)
                         res.end()
                     })
@@ -66,9 +66,9 @@ http.createServer((req, res) => {
             }else if(/\/compositores\/delete\/C[0-9]+$/i.test(req.url)){
                 id = req.url.split('/')[3]
                 console.log(id)
-                axios.delete("http://localhost:3000/compositores/"+id)
+                axios.get("http://localhost:3000/compositores/"+id)
                     .then(resp=>{
-                        res.writeHead(202,{'Content-Type':'text/html;charset=utf-8'})
+                        res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                         res.write("<p>Registo Apagado</p>")
                         res.write('<a href="http://localhost:9040/compositores" class="button">Voltar</a>')
                         res.end()
@@ -83,11 +83,11 @@ http.createServer((req, res) => {
             //Delete some compositor
             }else if(/\/compositores\/edit\/C[0-9]+$/i.test(req.url)){
                 id = req.url.split('/')[3]
-                axios.delete("http://localhost:3000/compositores/"+id)
+                axios.get("http://localhost:3000/compositores/"+id)
                     .then(resp=>{
                         compositor=resp.data
                         pag_compositor=templates.paginaEditarCompositor(compositor)
-                        res.writeHead(203,{'Content-Type':'text/html;charset=utf-8'})
+                        res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                         res.write(pag_compositor)
                         res.end()
                     })
@@ -101,7 +101,7 @@ http.createServer((req, res) => {
             }else if(req.url == '/compositores/new'){
                 pag_compositor=templates.paginaCriaCompositor()
                 console.log(pag_compositor)
-                res.writeHead(204,{'Content-Type':'text/html;charset=utf-8'})
+                res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                 res.write(pag_compositor)
                 res.end()
     
@@ -112,7 +112,7 @@ http.createServer((req, res) => {
                 .then(resp=>{
                     periodos=resp.data
                     pag_periodos=templates.paginaPeriodos(periodos)
-                    res.writeHead(202,{'Content-Type':'text/html;charset=utf-8'})
+                    res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                     res.write(pag_periodos)
                     res.end()
                 })
@@ -132,7 +132,7 @@ http.createServer((req, res) => {
 
             //Error page
             }else{
-                res.writeHead(502,{'Content-Type':'text/html;charset=utf-8'})
+                res.writeHead(500,{'Content-Type':'text/html;charset=utf-8'})
                 res.write("<p>Get request não suportado:"+req.url+"</p>")
                 res.end()
             }
@@ -143,16 +143,18 @@ http.createServer((req, res) => {
                 id = req.url.split('/')[3]
                 collectRequestBodyData(req, result => {
                     if (result) {
+                        print(result)
                         console.log(result)
                         axios.put("http://localhost:3000/compositores/" + id, result)
                             .then(resp => {
-                                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'}); // Correct status code
+                                res.writeHead(201, {'Content-Type': 'text/html;charset=utf-8'}); // Correct status code
                                 res.write("<pre>Registo alterado:" + JSON.stringify(resp.data) + "</pre>");
                                 res.end();
                             })
                             .catch(erro => {
                                 res.writeHead(503, {'Content-Type': 'text/html;charset=utf-8'}); // Adjusted status code
                                 res.write("<p>Não foi possível editar.</p>");
+                                res.write("<pre>" + erro +  +"</pre>");
                                 res.end();
                             });
             
@@ -169,7 +171,7 @@ http.createServer((req, res) => {
                     if(result){
                         axios.post("http://localhost:3000/compositores",result)
                             .then(resp=>{
-                                res.writeHead(204,{'Content-Type':'text/html;charset=utf-8'})
+                                res.writeHead(201,{'Content-Type':'text/html;charset=utf-8'})
                                 res.write("<pre>Registo inserido:"+JSON.stringify(resp.data)+"</pre>")
                                 res.end()
                             })
@@ -186,5 +188,6 @@ http.createServer((req, res) => {
                     }
                 }) 
             }
+            break;
     }
 }).listen(9040)

@@ -1,32 +1,6 @@
 {
   "compositores": [
     {
-      "id": "C26",
-      "nome": "Alessandro Marcello",
-      "bio": "Alessandro Ignazio Marcello (Veneza, 1 de Fevereiro de 1673 –Veneza, 19 de Junho de 1747) foi um nobre e diletante, que se interessava pela\n         arte, tendo sido poeta, filósofo e notável músico italiano.",
-      "dataNasc": "1673-02-01",
-      "dataObito": "1747-06-19",
-      "periodo": "Barroco"
-    },
-    {
-      "id": "C48",
-      "nome": "Alessandro Scarlatti",
-      "bio": "Alessandro Scarlatti (Palermo, 2 de maio de 1660 — Nápoles, 24 de outubro de 1725), cujo nome verdadeiro era Pietro Alessandro Gaspari, foi\n         um compositor italiano de grande importância para a música lírica do período barroco. Seu trabalho foi fundamental para o desenvolvimento da\n         ópera séria e da ópera bufa (ópera cômica) do seu tempo. Ele é considerado o pai da escola napolitana de ópera, a qual contou, mais tarde,\n         com membros como Leonardo Leo, Leonardo Vinci, Giovanni Pergolesi e Johann Adolfo Hasse, entre outros.Dentre as obras de sucesso de Scarlatti\n         merecem destaque as óperas Carlo, Re d'Allemagna (1716), Telemaco (1718) e La Griselda (1721). Além das óperas, Alessandro Scarlatti também\n         ficou famoso por suas cantatas de câmara. Foi pai de dois outros compositores, Domenico Scarlatti (1785-1757) e Pietro Filippo Scarlatti\n         (1679-1750), e irmão mais velho de Francesco Scarlatti (1666-1741), também compositor, ainda que de menor expressão em comparação com\n         Alessandro e Domenico.As óperas de Alessandro Scarlatti são dotadas de alto nível musical e influenciaram compositores dos mais variados\n         países. Do ponto de vista da ação dramática, porém, ficam a dever para as composições de autores que o sucederam, como Händel, Hasse e\n         Vivaldi. As aberturas das óperas de Alessandro Scarlatti, chamadas sinfonias, consistiam geralmente de três movimentos: rápido, lento e\n         rápido. Essa forma se tornou de grande importância na criação posterior da sinfonia clássica para orquestra.Alessandro Scarlatti foi um\n         compositor de extraordinário talento criativo. Sua obra compreende nada menos que 115 óperas, 150 oratórios e mais de 500 cantatas, além de\n         composições instrumentais. A música de Scarlatti forma um importante elo entre a música vocal do início do barroco italiano do século XVII,\n         centrada em Florença, Veneza e Roma, e a escola clássica do século XVIII, que culmina em Haydn (1732-1809) e Mozart (1756-1791).",
-      "dataNasc": "1660-05-02",
-      "dataObito": "1725-10-22",
-      "periodo": "Barroco",
-      "periodo_id": "p1"
-    },
-    {
-      "id": "C204",
-      "nome": "Antoine Forqueray",
-      "bio": "Antoine Forqueray (Paris 1671- Mantes-la-Jolie 1745) foi um compositor francês e intérprete virtuoso da viola de gamba.Nasceu em Paris, e\n         foi o mais conhecido de uma série de músicos, entre os quais o seu primo Michel Forqueray (1681-1757), o seu filho Jean-Baptiste Forqueray\n         (1699-1782) e Nicolas-Gilles Forqueray (1703-1761) que era segundo primo de Jean-Baptiste.O seu pai foi violista e mestre de baile.\n         Certamente ter-lhe-á dado as primeiras lições, que assimilou com rapidez, uma vez que foi considerado menino-prodígio. Atuou muito jovem para\n         o rei, que patrocinou generosamente a sua educação na corte. Em 1689, com somente 18 anos, foi nomeado musicien ordinaire de La Chambre du\n         Roy de Luís XIV. Frequentemente interpretava para entreter o rei durante as refeições e os embaixadores estrangeiros. Foi estimado como\n         professor, tendo entre os seus alunos Filipe de Orleães (futuro regente) e seu filho Luís.Em 1697 casou com Henriette-Angélique Houssu, filha\n         de um organista e ela mesma cravista. Frequentemente interpretava acompanhado pela sua mulher ao cravo. No entanto, o casamento teve várias\n         crises, tendo Antoine e Henriette se separado definitivamente em 1710. Em 1730 retirou-se para Mantes la Jolie, onde morreu em 1745. Não\n         publicou nada em vida, pois afirmava que aprender a partir de páginas impressas era para músicos preguiçosos. O seu filho Jean-Baptiste\n         publicou a coleção de 32 Pièces de viole avec la Basse Continue do seu pai, acompanhada por transcrições para teclado e incluiu também três\n         obras próprias. Segundo alguns estudiosos, várias das obras publicadas sob nome do seu pai poderão na realidade ser da sua autoria.Juntamente\n         com Marin Marais, foi considerado pelos seus contemporâneos o maior virtuoso enquanto intérprete da viola de gamba. Desejava tocar em viola\n         de gamba tudo o que podiam fazer os músicos italianos com o violino. A sua capacidade para a improvisação era notável. Dizia-se que\n         interpretava como um demónio, opondo-se a Marin Marais, que o fazia como um anjo.",
-      "dataNasc": "1671",
-      "dataObito": "1745-06-28",
-      "periodo": "Barroco",
-      "periodo_id": "p1"
-    },
-    {
       "id": "C50",
       "nome": "Antonio Lucio Vivaldi",
       "bio": "Antonio Lucio Vivaldi (Veneza, 4 de março de 1678 — Viena, 28 de julho de 1741) foi um grande compositor e músico italiano do estilo\n         barroco tardio. Tinha a alcunha de il prete rosso (\"o padre ruivo\") por ser um sacerdote católico de cabelos ruivos. Compôs 770 obras, entre\n         as quais 477 concertos e 46 óperas. É sobretudo conhecido popularmente como autor da série de concertos para violino e orquestra Le quattro\n         stagioni (\"As Quatro Estações\").",
@@ -34,15 +8,6 @@
       "dataObito": "1741-07-28",
       "periodo": "Barroco",
       "periodo_id": "p1"
-    },
-    {
-      "id": "C88",
-      "nome": "Antonio Maria Abbatini",
-      "bio": "Antonio Maria Abbatini (Città di Castello, 26 de janeiro de 1595 ou 1600 — agosto de 1679) foi um conhecido maestro e famoso compositor\n         italiano. Deu a forma de canto gregoriano aos Hinos da Igreja no ano de 1634 e deixou grande número de composições de música religiosa.",
-      "dataNasc": "1595-01-26",
-      "dataObito": "1679-03-15",
-      "periodo": "Renascimento",
-      "periodo_id": "p2"
     },
     {
       "id": "C148",
@@ -1456,6 +1421,22 @@
       "dataObito": "1726-01-02",
       "periodo": "Barroco",
       "periodo_id": "p1"
+    },
+    {
+      "id": "103f",
+      "nome": "1",
+      "bio": "sdlm",
+      "dataNasc": "123",
+      "dataObito": "123",
+      "periodo": "p1"
+    },
+    {
+      "id": "fab7",
+      "nome": "Jorge",
+      "bio": "skdjnfjndjc",
+      "dataNasc": "2002-12-12",
+      "dataObito": "2002-12-12",
+      "periodo": "p2"
     }
   ],
   "periodos_musicais": [
