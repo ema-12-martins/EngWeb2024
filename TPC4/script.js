@@ -65,12 +65,10 @@ http.createServer((req, res) => {
             //Delete some compositor
             }else if(/\/compositores\/delete\/C[0-9]+$/i.test(req.url)){
                 id = req.url.split('/')[3]
-                console.log(id)
-                axios.get("http://localhost:3000/compositores/"+id)
+                axios.delete("http://localhost:3000/compositores/"+id)
                     .then(resp=>{
                         res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                         res.write("<p>Registo Apagado</p>")
-                        res.write('<a href="http://localhost:9040/compositores" class="button">Voltar</a>')
                         res.end()
 
                     })
@@ -143,12 +141,12 @@ http.createServer((req, res) => {
                 id = req.url.split('/')[3]
                 collectRequestBodyData(req, result => {
                     if (result) {
-                        print(result)
                         console.log(result)
                         axios.put("http://localhost:3000/compositores/" + id, result)
                             .then(resp => {
                                 res.writeHead(201, {'Content-Type': 'text/html;charset=utf-8'}); // Correct status code
                                 res.write("<pre>Registo alterado:" + JSON.stringify(resp.data) + "</pre>");
+                                res.write('<a href="/compositores" class="w3-btn w3-purple w3-mb-2">Voltar</a>')
                                 res.end();
                             })
                             .catch(erro => {
