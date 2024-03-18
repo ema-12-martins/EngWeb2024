@@ -70,7 +70,20 @@ router.get('/eliminar/:idCompositor', function(req, res, next) {
         .catch(erro=>{
             res.status(506).render("error",{"error":erro})
         })
-  });
+});
+
+//Pagina do compositor
+router.get('/:idCompositor', function(req, res, next) {
+    var id=req.params.idCompositor
+    axios.get("http://localhost:3000/compositores/"+id)
+        .then(resp=>{
+            compositor=resp.data
+            res.status(200).render("compositorPagina",{"compositor":compositor})
+        })
+        .catch(erro=>{
+            res.status(507).render("error",{"error":erro})
+        })
+});
 
   
 module.exports = router;

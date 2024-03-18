@@ -10,18 +10,11 @@ block content
             table.w3-table-all
                 tr
                     th Nome
-                    th Bio 
-                    th Data de Nascimento
-                    th Data de Obito
-                    th Periodo Musical
                     th Alteracoes
                 each compositor in compositores
                     tr 
-                        td= compositor.nome
-                        td= compositor.bio 
-                        td= compositor.dataNasc 
-                        td= compositor.dataObito
-                        td= compositor.periodo
+                        td
+                            a(href="/compositores/"+compositor.id) #{compositor.nome}
                         td
                             span [
                                 a(href="/compositores/editar/"+compositor.id) Editar
