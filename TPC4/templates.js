@@ -129,6 +129,9 @@ exports.paginaCriaCompositor = function(){
                 <fieldset>
                     <legend>Informações</legend>
 
+                    <label>Id</label>
+                    <input class="w3-input w3-round" type="text" name="id"/>
+
                     <label>Nome</label>
                     <input class="w3-input w3-round" type="text" name="nome"/>
 

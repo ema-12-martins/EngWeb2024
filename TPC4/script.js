@@ -26,7 +26,6 @@ function collectRequestBodyData(request, callback) {
 http.createServer((req, res) => {
     console.log(req.method + " " + req.url);
 
-
     switch(req.method){
         case "GET": 
             //List compositores
@@ -69,6 +68,7 @@ http.createServer((req, res) => {
                     .then(resp=>{
                         res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                         res.write("<p>Registo Apagado</p>")
+                        res.write('<a href="/compositores" class="w3-btn w3-purple w3-mb-2">Voltar</a>')
                         res.end()
 
                     })
@@ -98,7 +98,6 @@ http.createServer((req, res) => {
             //Put a new compositor
             }else if(req.url == '/compositores/new'){
                 pag_compositor=templates.paginaCriaCompositor()
-                console.log(pag_compositor)
                 res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'})
                 res.write(pag_compositor)
                 res.end()
@@ -141,7 +140,6 @@ http.createServer((req, res) => {
                 id = req.url.split('/')[3]
                 collectRequestBodyData(req, result => {
                     if (result) {
-                        console.log(result)
                         axios.put("http://localhost:3000/compositores/" + id, result)
                             .then(resp => {
                                 res.writeHead(201, {'Content-Type': 'text/html;charset=utf-8'}); // Correct status code
@@ -171,6 +169,7 @@ http.createServer((req, res) => {
                             .then(resp=>{
                                 res.writeHead(201,{'Content-Type':'text/html;charset=utf-8'})
                                 res.write("<pre>Registo inserido:"+JSON.stringify(resp.data)+"</pre>")
+                                res.write('<a href="/compositores" class="w3-btn w3-purple w3-mb-2">Voltar</a>')
                                 res.end()
                             })
                             .catch(erro=>{
