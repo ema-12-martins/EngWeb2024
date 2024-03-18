@@ -16,4 +16,20 @@ router.get('/', function(req, res, next) {
         })
 });
 
+router.get('/registo', function(req, res, next) {
+    res.status(200).render("compositoresFormPage",{})
+});
+
+router.post('/registo', function(req, res, next) {
+    result=req.body
+    axios.post("http://localhost:3000/compositores",result)
+      .then(resp=>{
+            res.redirect("/")
+        })
+        .catch(erro=>{
+            res.status(502).render("error",{"error":erro})
+        })
+  });
+
+  
 module.exports = router;
