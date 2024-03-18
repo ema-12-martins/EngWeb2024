@@ -59,5 +59,18 @@ router.get('/editar/:idCompositor', function(req, res, next) {
         })
   });
 
+//Eliminar registo
+router.get('/eliminar/:idCompositor', function(req, res, next) {
+    var id=req.params.idCompositor
+    axios.delete("http://localhost:3000/compositores/"+id)
+        .then(resp=>{
+           res.redirect("/")
+  
+        })
+        .catch(erro=>{
+            res.status(506).render("error",{"error":erro})
+        })
+  });
+
   
 module.exports = router;
