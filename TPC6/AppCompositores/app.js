@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 
-var alunosRouter = require('./routes/compositores');
+var compositoresRouter = require('./routes/compositores');
 
 var mongoose = require("mongoose")
 var mongoDB='mongodb://127.0.0.1/tp2ew2024'
@@ -28,7 +28,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 app.use('/compositores', compositoresRouter);
 
 // catch 404 and forward to error handler
