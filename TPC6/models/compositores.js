@@ -4,9 +4,9 @@ var compositorSchema=new mongoose.Schema({
     _id:{type:String,require:true},
     nome:String,
     bio:String,
-    dataNasc:Boolean,
-    dataObito:Boolean,
-    periodo:Boolean,
+    dataNasc:String,
+    dataObito:String,
+    periodo:String,
 },{versionKey:false})
 
 module.exports=mongoose.model('compositores',compositorSchema)
