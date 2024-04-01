@@ -9,4 +9,4 @@ var compositorSchema=new mongoose.Schema({
     periodo:Boolean,
 },{versionKey:false})
 
-module.exports=mongoose.model('compositores',compositorShema)
+module.exports=mongoose.model('compositores',compositorSchema)
