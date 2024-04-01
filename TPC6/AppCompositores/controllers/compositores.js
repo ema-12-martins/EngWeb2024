@@ -22,3 +22,8 @@ module.exports.list=(id,compositor)=>{
 module.exports.remove=id=>{
     return Compositor.findByIdAndDelete(id).exec()
 }
+
+//Get One
+module.exports.findById = function(id){
+    return Compositor.findOne({_id: id}).exec()
+}
