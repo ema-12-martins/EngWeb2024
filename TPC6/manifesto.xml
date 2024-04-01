@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <title>TPC5: Pagina Compositores</title>
+        <date>2024-03-22</date>
+        <author>
+            <id>A97678</id>
+            <nome>Ema Martins</nome>
+        </author>
+        <uc>
+            <sigla>EW2024</sigla>
+            <nome>Engenharia Web </nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho teve como objetivo fazer o CRUD para um dataset de compositores. Com o ficheiro json criar uma base de dados em mongo db. A pagina devia ser gerada com o npx express. As páginas seriam então implementadas em pug. </p>
+        <p>Pode ser visualizado aqui: <url>https://github.com/ema-12-martins/EngWeb2024/tree/main/TPC6</url><texto>Repositório</texto></p>
+    </resumo>
+    <resultados>
+        <resultado> Com um servidor json ativo e com o aplicação a correr, é possível obter as páginas pretendidas, observando-as na porta 9040 do host local.</resultado>
+    </resultados> 
+</doc>

@@ -1,0 +1,31 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-gray
+            h1 Compositor
+        
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+                li
+                    b Nome: 
+                    span #{compositor.nome}
+                li
+                    b Biografia: 
+                    span #{compositor.bio}
+                li
+                    b Data de Nascimento:
+                    span #{compositor.dataNasc}
+                li
+                    b Data de Obito:
+                    span #{compositor.dataObito}
+                li
+                    b Periodo musical:
+                    span #{compositor.periodo}
+                
+
+        footer.w3-container.w3-gray
+            span Gerado por EngWeb2024   
+            span [
+                a(href="/") Voltar
+            span ]
