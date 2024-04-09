@@ -39,4 +39,4 @@ var pessoaSchema=new mongoose.Schema({
 
 },{versionKey:false})
 
-module.exports=mongoose.model('pessoas',pessoaSchema)
+module.exports=mongoose.model('prova_afericao',pessoaSchema,'prova_afericao') //Nome da colecao .... Para nao meter o s no fim

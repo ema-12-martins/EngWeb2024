@@ -14,7 +14,7 @@ module.exports.insert=Pessoa=>{
 }
 
 //Update
-module.exports.list=(id,Pessoa)=>{
+module.exports.update=(id,Pessoa)=>{
     return Pessoa.findByIdAndUpdate(id,Pessoa,{new:true}).exec() //new é para devolver os dados que foram mudados
 }
 
