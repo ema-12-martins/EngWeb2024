@@ -8,7 +8,7 @@ var logger = require('morgan');
 var compositoresRouter = require('./routes/compositores');
 
 var mongoose = require("mongoose")
-var mongoDB='mongodb://127.0.0.1/tp2ew2024'
+var mongoDB='mongodb://127.0.0.1/compositores'
 mongoose.connect(mongoDB)
 var db = mongoose.connection
 db.on('error',console.error.bind(console,'Erro na coneccao ao mongo db'))
