@@ -8,7 +8,7 @@ module.exports.list=()=>{
 }
 
 //Insert
-module.exports.insert=Pessoa=>{
+module.exports.insert=(Pessoa)=>{
     var newPessoa=new Pessoa(Pessoa)
     return newPessoa.save()
 }
@@ -21,7 +21,16 @@ module.exports.update=(id,Pessoa)=>{
 //Delete
 module.exports.remove=id=>{
     return Pessoa.findByIdAndDelete(id).exec()
+}
 
-    //ALTERNATIVA QUE FUNCIONA
-    //Pessoa.find({_id:id}).deleteOne().exec()
+//Pergunta 5
+module.exports.listSports=()=>{
+    return Pessoa
+    .distinct('desportos')
+    .exec();
+}
+
+//Pergunta 6
+module.exports.listSportNames=(desporto)=>{
+    return Pessoa.find( {desportos: { $in: [ desporto]}}, {_id:0,nome:1}).sort({nome:1}).exec()
 }
