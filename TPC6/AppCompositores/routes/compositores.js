@@ -6,7 +6,8 @@ var Compositor = require('../controllers/compositores')
 router.get('/', function(req, res, next) {
   Compositor.list()
     .then(data=>{
-      res.status(200).render("compositoresListagem",{"compositores":data})
+      console.log(data)
+      res.status(200).render("compositoresListagem",{"compositoreslist":compositores})
     })
     .catch(e =>  res.status(500).render("Erro", { "Error": e }))
 });
