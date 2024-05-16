@@ -9,8 +9,8 @@ module.exports.list = () => {
 
 //NAO ESTA FUNCIONAL
 module.exports.findById = id => {
-    return Contracts
-        .findOne({_id : id})
+    return Contratos
+        .find({_id : id},{})
         .exec()
 }
 
@@ -28,4 +28,24 @@ module.exports.listEntidades = () => {
 
 module.exports.listTipos = () => {
     return Contratos.distinct("tipoprocedimento").sort()
+}
+
+module.exports.insert = con => {
+    if((Contratos.find({_id : con._id}).exec()).length != 1){
+        var newContratos = new Contratos(con)
+        return newContratos.save()
+    }
+}
+
+module.exports.remove = id => {
+    return Contratos
+        .find({_id : id})
+        .deleteOne()
+        .exec()
+}
+
+module.exports.update = (id, cont) => {
+    return Contratos
+        .findByIdAndUpdate(id, cont, {new : true})
+        .exec()
 }

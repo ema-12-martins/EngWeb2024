@@ -32,6 +32,36 @@ router.get('/tipos', function(req, res){
     .catch(erro => res.jsonp(erro))
 });
 
+router.post('/', function(req, res) {
+  console.log(req.body)
+  Contratos.insert(req.body)
+    .then(data => res.status(201).jsonp(data))
+    .catch(erro => res.jsonp(erro))
+});
+
+router.delete('/:id', function(req, res) {
+  Contratos.remove(req.params.id)
+    .then(removedContract => {
+      if (!removedContract) {
+        return res.status(404).jsonp({ error: 'Contract not found' });
+      }
+      res.jsonp(removedContract);
+    })
+    .catch(error => res.status(500).jsonp(error));
+});
+
+router.put('/:id', function(req, res) {
+  Contratos.update(req.params.id, req.body)
+    .then(updatedContract => {
+      if (!updatedContract) {
+        return res.status(404).jsonp({ error: 'Contract not found' });
+      }
+      res.jsonp(updatedContract);
+    })
+    .catch(error => res.status(500).jsonp(error));
+});
+
+
 //ALGUMA COISA ERRADA
 router.get('/:id', function(req, res){
   Contratos.findById(req.params.id)
