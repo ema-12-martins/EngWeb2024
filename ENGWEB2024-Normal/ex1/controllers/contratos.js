@@ -7,7 +7,6 @@ module.exports.list = () => {
         .exec()
 }
 
-//NAO ESTA FUNCIONAL
 module.exports.findById = id => {
     return Contratos
         .find({_id : id},{})

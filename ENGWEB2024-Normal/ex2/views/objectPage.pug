@@ -1,0 +1,48 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Pagina do contrato #{objeto[0]._id}
+
+        
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:50%")
+                li
+                    b Id: 
+                    | #{objeto[0]._id}
+                li
+                    b Tipo de procedimento:
+                    | #{objeto[0].tipoprocedimento}
+                li
+                    b Objecto do contrato:
+                    | #{objeto[0].objectoContrato}
+                li
+                    b Data de publicação:
+                    | #{objeto[0].dataPublicacao}
+                li
+                    b Data de celebração do contrato:
+                    | #{objeto[0].dataCelebracaoContrato}
+                li
+                    b Preço contratual:
+                    | #{objeto[0].precoContratual}
+                li
+                    b Prazo de execução:
+                    | #{objeto[0].prazoExecucao}
+                li
+                    b NIPC da entidade comunicante:
+                    | #{objeto[0].NIPC_entidade_comunicante}
+                li
+                    b Entidade comunicante:
+                    | #{objeto[0].entidade_comunicante}
+                li
+                    b Fundamentação:
+                    | #{objeto[0].fundamentacao}
+
+                
+
+        footer.w3-container.w3-teal
+            address
+                span Gerado por Ema Martins em #{d} - [
+                a(href="/") Voltar
+                span ]

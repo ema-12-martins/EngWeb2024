@@ -62,7 +62,6 @@ router.put('/:id', function(req, res) {
 });
 
 
-//ALGUMA COISA ERRADA
 router.get('/:id', function(req, res){
   Contratos.findById(req.params.id)
     .then(data => res.jsonp(data))

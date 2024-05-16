@@ -1,0 +1,31 @@
+extends layout 
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Lista de Contrados
+                
+        
+        .w3-container
+            table.w3-table-all
+                tr
+                    th idcontrato
+                    th objectoContrato
+                    th dataCelebracaoContrato
+                    th precoContratual 
+                    th NIPC_entidade_comunicante
+                    th entidade_comunicante
+
+                each objeto in listaObjetos
+                    tr 
+                        td
+                            a(href="/"+objeto._id)= objeto._id
+                        td= objeto.objectoContrato
+                        td= objeto.dataCelebracaoContrato
+                        td= objeto.precoContratual 
+                        td= objeto.NIPC_entidade_comunicante
+                        td= objeto.entidade_comunicante
+                    
+        
+        footer.w3-container.w3-blue
+            h5 Generado por Ema Martins em #{date}
